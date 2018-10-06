@@ -1,4 +1,4 @@
-\documentclass[10pt,twoside,onecolumn,openany,final]{memoir}
+\documentclass[10pt,twoside,twocolumn,openany,final]{memoir}
 \setstocksize{10.75in}{8.25in}
 
 \usepackage[toc,lot,lof]{multitoc}
@@ -27,8 +27,8 @@
 \definecolor{offyellow}{RGB}{255,255,128}
 \definecolor{links}{RGB}{200,0,50}
 \usepackage{multirow}
-\usepackage{tabularx}
-
+\usepackage{tabulary}
+\usepackage{array,booktabs,longtable,tabularx}
 %% Font
 \usepackage[T1]{fontenc}
 \usepackage[bitstream-charter]{mathdesign}
@@ -202,6 +202,7 @@
 
 \clearpage
 %\begin{multicols}{2}
+
 
 \input{chapter-headings/pf01-gettingstarted}
 \input{chapter-headings/pf02-races}
