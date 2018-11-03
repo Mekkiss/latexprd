@@ -6,7 +6,8 @@
 \begin{table}[]
 \sffamily
 \caption{Minor Wondrous Items}
-\begin{tabular}{lll}
+\setlength{\tabcolsep}{1pt}
+\begin{tabularx}{\linewidth}{lXl}
 \textbf{d\%} & \textbf{Item}                                        & \textbf{Market Price} \\
 01  & Feather token, anchor                       & 50 gp        \\
 02  & Universal solvent                           & 50 gp        \\
@@ -108,13 +109,14 @@
 98  & Periapt of health                           & 7,400 gp     \\
 99  & Boots of levitation                         & 7,500 gp     \\
 100 & Harp of charming                            & 7,500 gp    
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{table}[]
 \sffamily
 \caption{Medium Wondrous Items}
-\begin{tabular}{lll}
+\setlength{\tabcolsep}{1pt}
+\begin{tabularx}{\linewidth}{lXl}
 d\% & Item                                        & Market Price \\
 01  & Amulet of natural armor +2                  & 8,000 gp     \\
 02  & Golem manual, flesh                         & 8,000 gp     \\
@@ -216,13 +218,14 @@ d\% & Item                                        & Market Price \\
 98  & Tome of clear thought +1                    & 27,500 gp    \\
 99  & Tome of leadership and influence +1         & 27,500 gp    \\
 100 & Tome of understanding +1                    & 27,500 gp   
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{table}[]
 \sffamily
 \caption{Major Wondrous Items}
-\begin{tabular}{lll}
+\setlength{\tabcolsep}{1pt}
+\begin{tabularx}{\linewidth}{lXl}
 d\% & Item                                           & Market Price \\
 01  & Dimensional shackles                           & 28,000 gp    \\
 02  & Figurine of wondrous power, obsidian steed     & 28,500 gp    \\
@@ -324,7 +327,7 @@ d\% & Item                                           & Market Price \\
 98  & Cubic gate                                     & 164,000 gp   \\
 99  & Iron flask                                     & 170,000 gp   \\
 100 & Mirror of life trapping                        & 200,000 gp  
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \label{f0}				
@@ -445,9 +448,10 @@ Description
 This appears to be a common cloth sack about 2 feet by 4 feet in size. The \textit{bag of holding }opens into a nondimensional space: its inside is larger than its outside dimensions. Regardless of what is put into the bag, it weighs a fixed amount. This weight, and the limits in weight and volume of the bag's contents, depend on the bag's type, as shown on the table below.
 				
 % <div class="table">
-
+\setlength{\tabcolsep}{1pt}
 \begin{tabular}{lllll}
-\textbf{Bag} & \textbf{Bag Weight} & \textbf{Contents Limit} & \textbf{Contents Volume Limit} & \textbf{Market Price}\\
+             & \textbf{Bag}    & \textbf{Contents}& \textbf{Contents}     & \textbf{Market} \\
+\textbf{Bag} & \textbf{Weight} & \textbf{Limit}   & \textbf{Volume Limit} & \textbf{Price}\\
 Type I & 15 lbs. & 250 lbs. & 30 cubic ft. & 2,500 gp\\
 Type II & 25 lbs. & 500 lbs. & 70 cubic ft. & 5,000 gp\\
 Type III & 35 lbs. & 1,000 lbs. & 150 cubic ft. & 7,400 gp\\
@@ -472,7 +476,7 @@ Description
 				
 This small sack appears empty. Anyone reaching into the bag feels a small, fuzzy ball. If the ball is removed and tossed up to 20 feet away, it turns into an animal. The animal serves the character who drew it from the bag for 10 minutes (or until slain or ordered back into the bag), at which point it disappears. It can follow any of the commands described in the Handle Animal skill. Each of the three kinds of \textit{bags of tricks }produces a different set of animals. Use the following tables to determine what animals can be drawn out of each.
 				
-% <div class="table">
+\setlength{\tabcolsep}{1pt}
 \begin{tabular}{cccccc}
 \multicolumn{2}{c}{\textbf{Gray Bag}} & \multicolumn{2}{c}{\textbf{Rust Bag}} & \multicolumn{2}{c}{\textbf{Tan Bag}}\\
 \textbf{d\%} & \textbf{Animal} & \textbf{d\%} & \textbf{Animal} & \textbf{d\%} & \textbf{Animal}\\
@@ -1094,14 +1098,14 @@ Description
 This is the most common form of scrying device, a crystal sphere about 6 inches in diameter. So well-known are these items that many so-called oracles or fortune-tellers use similar appearing (but completely non-magical) replicas of these items to ply their trades. A character can use a magical \textit{crystal ball} to see over virtually any distance or into other planes of existence, as with the spell \textit{scrying }(Will DC 16 negates). A \textit{crystal ball} can be used multiple times per day, but the DC to resist its power decreases by 1 for each additional use.
 				
 Certain \textit{crystal balls }have additional powers that can be used through the \textit{crystal ball }on the target viewed.
-\begin{tabular}{ll}
+\begin{tabularx}{\linewidth}{Xl}
 \textbf{Crystal Ball Type} & \textbf{Market Price}\\
 \textit{Crystal ball} & 42,000 gp\\
 \textit{Crystal ball} with \textit{see invisibility} & 50,000 gp\\
 \textit{Crystal ball} with \textit{telepathy}* & 70,000 gp\\
 \textit{Crystal ball} with \textit{true seeing} & 80,000 gp\\
 \textit{Crystal ball} with \textit{detect thoughts} (Will DC 13 negates) & 51,000 gp\\
-\end{tabular}
+\end{tabularx}
 * The viewer is able to send and receive silent mental messages with the person appearing in the crystal ball. Once per day, the character may attempt to implant a \textit{suggestion} (as the spell, Will DC 14 negates) as well.
 
 Construction
@@ -1118,21 +1122,22 @@ Description
 				
 This device is just under an inch across and can be made of ivory, bone, or any hard mineral. Typically, each of the cube's faces are polished smooth, but sometimes they are etched with runes. The device enables its possessor to put up a special cube made up of 6 individual \textit{wall of force }spells, 10 feet on a side around her person. This cubic screen moves with the character and is impervious to the attack forms mentioned on the table below. The cube has 36 charges when fully charged---charges used are automatically renewed each day. The possessor presses one face of the cube to activate a particular type of screen or to deactivate the device. Each effect costs a certain number of charges to maintain for every minute (or portion of a minute) it is in operation. Also, when an effect is active, the possessor's speed is limited to the maximum value given on the table.
 				
-When the \textit{cube of force }is active, attacks dealing more than 30 points of damage drain 1 charge for every 10 points of damage beyond 30 that they deal. The charge cost to maintain each of the cube's six walls is summarized below.
+When the \textit{cube of force }is active, attacks dealing more than 30 points of damage drain 1 charge for every 10 points of damage beyond 30 that they deal. The charge cost to maintain each of the cube's six walls is summarized below.\\
 
-\begin{tabular}{llll}
-\textbf{Cube Face} & \textbf{Charge Cost per Minute} & \textbf{Max. Speed} & \textbf{Effect}\\
+\begin{tabularx}{\linewidth}{lllX}
+\textbf{Cube} & \textbf{Charge Cost} & \textbf{Max.} & \\
+\textbf{Face} & \textbf{per Minute} & \textbf{Speed} & \textbf{Effect}\\
 1 & 1 & 30 ft. & Keeps out gases, wind, etc.\\
 2 & 2 & 20 ft. & Keeps out nonliving matter\\
 3 & 3 & 15 ft. & Keeps out living matter\\
 4 & 4 & 10 ft. & Keeps out magic\\
 5 & 6 & 10 ft. & Keeps out all things\\
 6 & 0 & As normal & Deactivates\\
-\end{tabular}
+\end{tabularx}
 				
-Spells that affect the integrity of the screen also drain extra charges. These spells cannot be cast into or out of the cube. 
-% <thead href="../spells/wallOfForce.html#wall-of-force">
-\begin{tabular}{ll}
+Spells that affect the integrity of the screen also drain extra charges. These spells cannot be cast into or out of the cube. \\
+
+\begin{tabular}{lc}
 \textbf{Attack Form} & \textbf{Extra Charges}\\
 Disintegrate & 6\\
 Horn of blasting & 6\\
@@ -1221,20 +1226,22 @@ Construction
 Description
 				
 This set of parchment cards is usually found in an ivory, leather, or wooden box. A full deck consists of 34 cards. When a card is drawn at random and thrown to the ground, a \textit{major image }of a creature is formed. The figment lasts until dispelled. The illusory creature cannot move more than 30 feet away from where the card landed, but otherwise moves and acts as if it were real. At all times it obeys the desires of the character who drew the card. When the illusion is dispelled, the card becomes blank and cannot be used again. If the card is picked up, the illusion is automatically and instantly dispelled. The cards in a deck and the illusions they bring forth are summarized on the following table. (Use one of the first two columns to simulate the contents of a full deck using either ordinary playing cards or tarot cards.)
-
-\begin{tabular}{lll}
+\setlength{\tabcolsep}{1pt}
+\begin{tabularx}{\linewidth}{lll}
 \textbf{Playing Card}  & \textbf{Tarot Card}    & \textbf{Creature}                       \\
 Ace of hearts          & IV. The Emperor        & Red dragon                              \\
-King of hearts         & Knight of swords       & Male human fighter and four guards      \\
+King of hearts         & Knight of swords       & Male human fighter \\
+                       &                        & and four guards      \\
 Queen of hearts        & Queen of staves        & Female human wizard                     \\
 Jack of hearts         & King of staves         & Male human druid                        \\
 Ten of hearts          & VII. The Chariot       & Cloud giant                             \\
 Nine of hearts         & Page of staves         & Ettin                                   \\
 Eight of hearts        & Ace of cups            & Bugbear                                 \\
 Two of hearts          & Five of staves         & Goblin                                  \\
-Playing Card           & Tarot Card             & Creature                                \\
+\textbf{Playing Card}  & \textbf{Tarot Card}    & \textbf{Creature}                       \\
 Ace of diamonds        & III. The Empress       & Glabrezu (demon)                        \\
-King of diamonds       & Two of cups            & Male elf wizard and female apprentice   \\
+King of diamonds       & Two of cups            & Male elf wizard \\
+                       &                        & and female apprentice   \\
 Queen of diamonds      & Queen of swords        & Half-elf ranger                         \\
 Jack of diamonds       & XIV. Temperance        & Harpy                                   \\
 Ten of diamonds        & Seven of staves        & Male half-orc barbarian                 \\
@@ -1250,7 +1257,7 @@ Ten of spades          & Seven of swords        & Frost giant                   
 Nine of spades         & Three of swords        & Troll                                   \\
 Eight of spades        & Ace of swords          & Hobgoblin                               \\
 Two of spades          & Five of cups           & Goblin                                  \\
-Playing Card           & Tarot Card             & Creature                                \\
+\textbf{Playing Card}  & \textbf{Tarot Card}    & \textbf{Creature}                       \\
 Ace of clubs           & VIII. Strength         & Iron golem                              \\
 King of clubs          & Page of pentacles      & Three halfling rogues                   \\
 Queen of clubs         & Ten of cups            & Pixies                                  \\
@@ -1259,10 +1266,11 @@ Ten of clubs           & Nine of staves         & Hill giant                    
 Nine of clubs          & King of swords         & Ogre                                    \\
 Eight of clubs         & Ace of staves          & Orc                                     \\
 Two of clubs           & Five of cups           & Kobold                                  \\
-Playing Card           & Tarot Card             & Creature                                \\
+\textbf{Playing Card}  & \textbf{Tarot Card}    & \textbf{Creature}                       \\
 Joker                  & Two of pentacles       & Illusion of deck's owner                \\
-Joker (with trademark) & Two of staves          & Illusion of deck's owner (sex reversed)
-\end{tabular}				
+Joker (with trademark) & Two of staves          & Illusion of deck's \\
+                       &                        & owner (sex reversed)
+\end{tabularx}				
 A randomly generated deck is usually complete (11--100 on d\%), but may be discovered (01--10) with 1d20 of its cards missing. If cards are missing, reduce the price by a corresponding amount. 
 				
 Construction
@@ -2079,15 +2087,18 @@ Construction
 Description
 				
 This magic instrument comes in four varieties. Each appears to be normal until someone speaks its command word and blows the horn. Then the horn summons a number of human barbarians to fight for the character who summoned them. Each horn can be blown just once every 7 days. Roll d\% and refer to the table above to see what type of horn is found. The horn's type determines what barbarians are summoned and what prerequisite is needed to use the horn. Any character who uses a \textit{horn of Valhalla} but doesn't have the prerequisite is attacked by the barbarians she herself summoned.
-				Horn of Valhalla
-% <thead class="stat-block-breaker">
+
+\begin{figure*}
+\caption{Horn of Valhalla}  % TODO: don't index this table
+\sffamily
 \begin{tabular}{llll}
 \textbf{d\%} & \textbf{Type of Horn} & \textbf{Barbarians Summoned} & \textbf{Prerequisite}                                              \\
-01–40        & Silver                & 2d4+2, 2nd-level             & None                                                               \\
-41–75        & Brass                 & 2d4+1, 3rd-level             & Spellcaster level 1st                                              \\
-76–90        & Bronze                & 2d4, 4th-level               & Proficiency with all martial weapons or bardic performance ability \\
-91–100       & Iron                  & 1d4+1, 5th-level             & Proficiency with all martial weapons or bardic performance ability
-\end{tabular}				
+01--40        & Silver                & 2d4+2, 2nd-level             & None                                                               \\
+41--75        & Brass                 & 2d4+1, 3rd-level             & Spellcaster level 1st                                              \\
+76--90        & Bronze                & 2d4, 4th-level               & Proficiency with all martial weapons or bardic performance ability \\
+91--100       & Iron                  & 1d4+1, 5th-level             & Proficiency with all martial weapons or bardic performance ability
+\end{tabular}
+\end{figure*}
 Summoned barbarians are constructs, not actual people (though they seem to be); they arrive with the starting equipment for barbarians. They attack anyone the possessor of the horn commands them to fight until they or their opponents are slain or until 1 hour has elapsed, whichever comes first. 
 				
 Construction
@@ -2171,7 +2182,7 @@ Description
 These crystalline stones always float in the air and must be within 3 feet of their owner to be of any use. When a character first acquires a stone, she must hold it and then release it, whereupon it takes up a circling orbit 1d3 feet from her head. Thereafter, a stone must be grasped or netted to separate it from its owner. The owner may voluntarily seize and stow a stone (to keep it safe while she is sleeping, for example), but she loses the benefits of the stone during that time. Ioun stones have AC 24, 10 hit points, and hardness 5. The powers of each stone vary depending on its color and shape (see the table).
 				
 
-\begin{table}[]
+\begin{figure*}[]
 \sffamily
 \caption{Ioun Stones}
 \begin{tabular}{llll}
@@ -2183,23 +2194,20 @@ Incandescent blue  & Sphere         & +2 enhancement bonus to Wisdom            
 Pale blue          & Rhomboid       & +2 enhancement bonus to Strength                                             & 8,000 gp              \\
 Pink               & Rhomboid       & +2 enhancement bonus to Constitution                                         & 8,000 gp              \\
 Pink and green     & Sphere         & +2 enhancement bonus to Charisma                                             & 8,000 gp              \\
-Scarlet and blue   & Sphere         & +2 enhancement bonus to Intelligence1                                        & 8,000 gp              \\
+Scarlet and blue   & Sphere         & +2 enhancement bonus to Intelligence\textsuperscript{1}                      & 8,000 gp              \\
 Dark blue          & Rhomboid       & Alertness (as the feat)                                                      & 10,000 gp             \\
 Iridescent         & Spindle        & Sustains creature without air                                                & 18,000 gp             \\
-Pale lavender      & Ellipsoid      & Absorbs spells of 4th level or lower2                                        & 20,000 gp             \\
+Pale lavender      & Ellipsoid      & Absorbs spells of 4th level or lower\textsuperscript{2}                      & 20,000 gp             \\
 Pearly white       & Spindle        & Regenerate 1 point of damage per 10 minutes                                  & 20,000 gp             \\
 Pale green         & Prism          & +1 competence bonus on attack rolls, saves, skill checks, and ability checks & 30,000 gp             \\
 Orange             & Prism          & +1 caster level                                                              & 30,000 gp             \\
 Vibrant purple     & Prism          & Stores three levels of spells, as a ring of spell storing                    & 36,000 gp             \\
-Lavender and green & Ellipsoid      & Absorbs spells of 8th level or lower3                                        & 40,000 gp             \\
+Lavender and green & Ellipsoid      & Absorbs spells of 8th level or lower\textsuperscript{3}                      & 40,000 gp             \\
 \end{tabular}
 \(^{1}\) This stone has one skill associated with it, as a \emph{+2 headband of vast intelligence}
 \(^{2}\) After absorbing 20 spell levels, the stone burns out and turns to dull gray, forever useless.
 \(^{3}\) After absorbing 50 spell levels, the stone burns out and turns dull gray, forever useless.
-\end{table}
-% </tfoot colspan="4">
-
-% </div colspan="4">
+\end{figure*}
 
 				
 Regeneration from the pearly white \textit{ioun stone} works like a \textit{ring of regeneration.} It only cures damage taken while the character is using the stone. The pale lavender and lavender-and-green stones work like a \textit{rod of absorption,} but absorbing a spell requires a readied action, and these stones cannot be used to empower spells. Stored spells in the vibrant purple stone must be placed by a spellcaster but can be used by anyone (see \textit{ring of minor spell storing}). 
@@ -2236,20 +2244,20 @@ These special containers are typically inlaid with runes of silver and stoppered
 				
 The command word can be used only once per day.
 				
-If the individual freeing the captured creature speaks the command word, the creature can be forced to serve for 1 hour. If freed without the command word, the creature acts according to its natural inclinations. (It usually attacks the user, unless it perceives a good reason not to.) Any attempt to force the same creature into the flask a second time provides it a +2 bonus on its saving throw and makes it hostile. A newly discovered bottle might contain any of the following:
-% <thead href="../combat.html#will">
+If the individual freeing the captured creature speaks the command word, the creature can be forced to serve for 1 hour. If freed without the command word, the creature acts according to its natural inclinations. (It usually attacks the user, unless it perceives a good reason not to.) Any attempt to force the same creature into the flask a second time provides it a +2 bonus on its saving throw and makes it hostile. A newly discovered bottle might contain any of the following:\\
+
 \begin{tabular}{ll}
 \textbf{d\%} & \textbf{Contents}     \\
-01–50        & Empty                 \\
-51–54        & Large air elemental   \\
-55–58        & Invisible stalker     \\
-59–62        & Large earth elemental \\
-63–66        & Xorn                  \\
-67–70        & Large fire elemental  \\
-71–74        & Salamander 95         \\
-75–78        & Large water elemental \\
-79–82        & Xill                  \\
-83–85        & Yeth hound            \\
+01--50        & Empty                 \\
+51--54        & Large air elemental   \\
+55--58        & Invisible stalker     \\
+59--62        & Large earth elemental \\
+63--66        & Xorn                  \\
+67--70        & Large fire elemental  \\
+71--74        & Salamander 95         \\
+75--78        & Large water elemental \\
+79--82        & Xill                  \\
+83--85        & Yeth hound            \\
 86           & Demon (shadow)        \\
 87           & Demon (vrock)         \\
 88           & Demon (hezrou)        \\
@@ -2266,7 +2274,7 @@ If the individual freeing the captured creature speaks the command word, the cre
 99           & Demon (balor)         \\
 100          & Devil (pit fiend)    
 \end{tabular} 
-				
+
 Construction
 				
 \textbf{Requirements} Craft Wondrous Item,\textit{ trap the soul;}\textbf{ Cost }85,000 gp
@@ -2516,20 +2524,20 @@ Description
 This item appears to be a string of beads, sometimes with the ends tied together to form a necklace. (It does not count as an item worn around the neck for the purpose of determining which of a character's worn magic items is effective.) If a character holds it, however, all can see the strand as it really is---a golden chain from which hang a number of golden spheres. The spheres are detachable by the wearer (and only by the wearer), who can easily hurl one of them up to 70 feet. When a sphere arrives at the end of its trajectory, it detonates as a\textit{ fireball} spell (Reflex DC 14 half).
 				
 Spheres come in different strengths, ranging from those that deal 2d6 points of fire damage to those that deal 10d6. The market price of a sphere is 150 gp for each die of damage it deals.
-\begin{table}[]
+\begin{figure*}[]
 \sffamily
 \textbf{Necklace of Fireballs}
 \begin{tabular}{lllllllllll}
 \textbf{Necklace} & \textbf{10d6} & \textbf{9d6} & \textbf{8d6} & \textbf{7d6} & \textbf{6d6} & \textbf{5d6} & \textbf{4d6} & \textbf{3d6} & \textbf{2d6} & \textbf{Market Price} \\
-Type I            & —             & —            & —            & —            & —            & 1            & —            & 2            & —            & 1,650 gp              \\
-Type II           & —             & —            & —            & —            & 1            & —            & 2            & —            & 2            & 2,700 gp              \\
-Type III          & —             & —            & —            & 1            & —            & 2            & —            & 4            & —            & 4,350 gp              \\
-Type IV           & —             & —            & 1            & —            & 2            & —            & 2            & —            & 4            & 5,400 gp              \\
-Type V            & —             & 1            & —            & 2            & —            & 2            & —            & 2            & —            & 5,850 gp              \\
-Type VI           & 1             & —            & 2            & —            & 2            & —            & 4            & —            & —            & 8,100 gp              \\
-Type VII          & 1             & 2            & —            & 2            & —            & 2            & —            & 2            & —            & 8,700 gp             
+Type I            & ---             & ---            & ---            & ---            & ---            & 1            & ---            & 2            & ---            & 1,650 gp              \\
+Type II           & ---             & ---            & ---            & ---            & 1            & ---            & 2            & ---            & 2            & 2,700 gp              \\
+Type III          & ---             & ---            & ---            & 1            & ---            & 2            & ---            & 4            & ---            & 4,350 gp              \\
+Type IV           & ---             & ---            & 1            & ---            & 2            & ---            & 2            & ---            & 4            & 5,400 gp              \\
+Type V            & ---             & 1            & ---            & 2            & ---            & 2            & ---            & 2            & ---            & 5,850 gp              \\
+Type VI           & 1             & ---            & 2            & ---            & 2            & ---            & 4            & ---            & ---            & 8,100 gp              \\
+Type VII          & 1             & 2            & ---            & 2            & ---            & 2            & ---            & 2            & ---            & 8,700 gp             
 \end{tabular}
-\end{table}				
+\end{figure*}				
 Each \textit{necklace of fireballs} contains a combination of spheres of various strengths. Some traditional combinations, designated types I through VII, are detailed above.
 				
 If the necklace is being worn or carried by a character who fails her saving throw against a magical fire attack, the item must make a saving throw as well (with a save bonus of +7). If the necklace fails to save, all its remaining spheres detonate simultaneously, often with regrettable consequences for the wearer. 
@@ -2900,23 +2908,23 @@ This appears to be an unremarkable robe, but a character who dons it notes that 
 \end{itemize}
 				
 In addition, the robe has several other patches. Roll 4d4 for the number of other patches and then roll for each patch on the table below to determine its nature.
-% <thead class="stat-block-breaker">
-\begin{tabular}{ll}
+\setlength{\tabcolsep}{1pt}
+\begin{tabularx}{\linewidth}{lX}
 \textbf{d\%} & \textbf{Result}                                                                                                          \\
-01–08        & Bag of 100 gold pieces                                                                                                   \\
-09–15        & Coffer, silver (6 in. by 6 in. by 1 ft.), 500 gp value                                                                   \\
-16–22        & Door, iron (up to 10 ft. wide and 10 ft. high and barred on one side—must be placed upright, attaches and hinges itself) \\
-23–30        & Gems, 10 (100 gp value each)                                                                                             \\
-31–44        & Ladder, wooden (24 ft. long)                                                                                             \\
-45–51        & Mule (with saddle bags)                                                                                                  \\
-52–59        & Pit, open (10 ft. by 10 ft. by 10 ft.)                                                                                   \\
-60–68        & Potion of cure serious wounds                                                                                            \\
-69–75        & Rowboat (12 ft. long)                                                                                                    \\
-76–83        & Minor scroll of one randomly determined spell                                                                            \\
-84–90        & War dogs, pair (treat as riding dogs)                                                                                    \\
-91–96        & Window (2 ft. by 4 ft., up to 2 ft. deep)                                                                                \\
-97–100       & Portable ram                                                                                                            
-\end{tabular}				
+01--08        & Bag of 100 gold pieces                                                                                                   \\
+09--15        & Coffer, silver (6 in. by 6 in. by 1 ft.), 500 gp value                                                                   \\
+16--22        & Door, iron (up to 10 ft. wide and 10 ft. high and barred on one side---must be placed upright, attaches and hinges itself) \\
+23--30        & Gems, 10 (100 gp value each)                                                                                             \\
+31--44        & Ladder, wooden (24 ft. long)                                                                                             \\
+45--51        & Mule (with saddle bags)                                                                                                  \\
+52--59        & Pit, open (10 ft. by 10 ft. by 10 ft.)                                                                                   \\
+60--68        & Potion of cure serious wounds                                                                                            \\
+69--75        & Rowboat (12 ft. long)                                                                                                    \\
+76--83        & Minor scroll of one randomly determined spell                                                                            \\
+84--90        & War dogs, pair (treat as riding dogs)                                                                                    \\
+91--96        & Window (2 ft. by 4 ft., up to 2 ft. deep)                                                                                \\
+97--100       & Portable ram                                                                                                            
+\end{tabularx}
 Multiple items of the same kind are permissible. Once removed, a patch cannot be replaced. 
 				
 Construction
