@@ -163,16 +163,17 @@ Remember that even actions that normally provoke attacks of opportunity may have
 An attack of opportunity \texttt{{}"{}}interrupts\texttt{{}"{}} the normal flow of actions in the round. If an attack of opportunity is provoked, immediately resolve the attack of opportunity, then continue with the next character's turn (or complete the current turn, if the attack of opportunity was provoked in the midst of a character's turn).
 				
 \textit{Combat Reflexes and Additional Attacks of Opportunity}: If you have the Combat Reflexes feat, you can add your Dexterity bonus to the number of attacks of opportunity you can make in a round. This feat does not let you make more than one attack for a given opportunity, but if the same opponent provokes two attacks of opportunity from you, you could make two separate attacks of opportunity (since each one represents a different opportunity). Moving out of more than one square threatened by the same opponent in the same round doesn't count as more than one opportunity for that opponent. All these attacks are at your full normal attack bonus.
-% <div align="center">
-\fbox{\texttt{AttacksOfOpportunity.jpg \footnotemark}}
-% <tfoot src="../image/AttacksOfOpportunity.jpg">
+
+\begin{figure}
+\sffamily
+\caption{Attacks of Opportunity}
+\includegraphics[width=\linewidth]{images/AttacksOfOpportunity.jpg}
 
 In this combat, the fighter and the sorcerer fight an ogre and his goblin buddy.\newline
 \#1: The fighter can safely approach this way without provoking an attack of opportunity, as he does not pass through a square threatened by the ogre (who has 10 feet of reach) or the goblin.\newline
-\#2: If the fighter approaches this way, he provokes two attacks of opportunity since he passes through a square both creatures threaten.
-% </br /="">
-
-\#3: The sorcerer moves away using a withdraw action. The first square she leaves is not threatened as a result, and she can thus move away from the goblin safely, but when she leaves the second square, she provokes an attack of opportunity from the ogre (who has 10 feet of reach). She could instead limit her movement to a 5-foot step, as a free action, and not provoke any attacks of opportunity.
+\#2: If the fighter approaches this way, he provokes two attacks of opportunity since he passes through a square both creatures threaten.\\
+\#3: The sorcerer moves away using a withdraw action. The first square she leaves is not threatened as a result, and she can thus move away from the goblin safely, but when she leaves the second square, she provokes an attack of opportunity from the ogre (who has 10 feet of reach). She could instead limit her movement to a 5-foot step, as a free action, and not provoke any attacks of opportunity.\\
+\end{figure}
 
 				
 \subsection{Speed}
@@ -204,100 +205,66 @@ Generally, when you are subject to an unusual or magical attack, you get a savin
 \textbf{Saving Throw Difficulty Class}: The DC for a save is determined by the attack itself.
 				
 \textbf{Automatic Failures and Successes}: A natural 1 (the d20 comes up 1) on a saving throw is always a failure (and may cause damage to exposed items; see Items Surviving after a Saving Throw). A natural 20 (the d20 comes up 20) is always a success.
-				
+
+\vfill\null
+\columnbreak
+
 \section{Actions In Combat}
 
-Table: Actions in Combat
-% <
-\begin{table}[]
+\begin{table*}[]
 \sffamily
-\caption{Table: Actions in Combat}
-\begin{tabular}{ll}
-                         & \textbf{Attack of}\\
-\textbf{Standard Action} & \textbf{Opportunity}\\
-Attack (melee) & No\\
-Attack (ranged) & Yes\\
-Attack (unarmed) & Yes\\
-Activate a magic item other than a potion or oil & No\\
-Aid another & Maybe\(^{2}\)\\
-Cast a spell (1 standard action casting time) & Yes\\
-Channel energy & No\\
-Concentrate to maintain an active spell & No\\
-Dismiss a spell & No\\
-Draw a hidden weapon (see Sleight of Hand skill) & No\\
-Drink a potion or apply an oil & Yes\\
-Escape a grapple & No\\
-Feint & No\\
-Light a torch with a tindertwig & Yes\\
-Lower spell resistance & No\\
-Read a scroll & Yes\\
-Ready (triggers a standard action) & No\\
-Stabilize a dying friend (see Heal skill) & Yes\\
-Total defense & No\\
-Use extraordinary ability & No\\
-Use skill that takes 1 action & Usually\\
-Use spell-like ability & Yes\\
-Use supernatural ability & No\\
-                         & \textbf{Attack of}\\
-\textbf{Move Action} & \textbf{Opportunity}\\
-Move & Yes\\
-Control a frightened mount & Yes\\
-Direct or redirect an active spell & No\\
-Draw a weapon\(^{3}\) & No\\
-Load a hand crossbow or light crossbow & Yes\\
-Open or close a door & No\\
-Mount/dismount a steed & No\\
-Move a heavy object & Yes\\
-Pick up an item & Yes\\
-Sheathe a weapon & Yes\\
-Stand up from prone & Yes\\
-Ready or drop a shield\(^{3}\) & No\\
-Retrieve a stored item & Yes\\
-                         & \textbf{Attack of}\\
-\textbf{Full-Round Action} & \textbf{Opportunity}\\
-Full attack & No\\
-Charge\(^{4}\) & No\\
-Deliver coup de grace & Yes\\
-Escape from a net & Yes\\
-Extinguish flames & No\\
-Light a torch & Yes\\
-Load a heavy or repeating crossbow & Yes\\
-Lock or unlock weapon in locked gauntlet & Yes\\
-Prepare to throw splash weapon & Yes\\
-Run & Yes\\
-Use skill that takes 1 round & Usually\\
-Use a touch spell on up to six friends & Yes\\
-Withdraw\(^{4}\) & No\\
-                         & \textbf{Attack of}\\
-\textbf{Free Action} & \textbf{Opportunity}\\
-Cease concentration on a spell & No\\
-Drop an item & No\\
-Drop to the floor & No\\
-Prepare spell components to cast a spell\(^{5}\) & No\\
-Speak & No\\
-                         & \textbf{Attack of}\\
-\textbf{Swift Action} & \textbf{Opportunity}\\
-Cast a quickened spell & No\\
-                         & \textbf{Attack of}\\
-\textbf{Immediate Action} & \textbf{Opportunity}\\
-Cast \textit{feather fall} & No\\
-                         & \textbf{Attack of}\\
-\textbf{No Action} &  \textbf{Opportunity}\\
-Delay & No\\
-5-foot step & No\\
-                         & \textbf{Attack of}\\
-\textbf{Action Type Varies} & \textbf{Opportunity}\\
-Perform a combat maneuver\(^{6}\) & Yes\\
-Use feat\(^{7}\) & Varies\\
-\end{tabular}
-1 Regardless of the action, if you move out of a threatened square, you usually provoke an attack of opportunity. This column indicates whether the action itself, not moving, provokes an attack of opportunity.\newline
-2 If you aid someone performing an action that would normally provoke an attack of opportunity, then the act of aiding another provokes an attack of opportunity as well.\newline
-3 If you have a base attack bonus of +1 or higher, you can combine one of these actions with a regular move. If you have the Two-Weapon Fighting feat, you can draw two light or one-handed weapons in the time it would normally take you to draw one.\newline
-4 May be taken as a standard action if you are limited to taking only a single action in a round.\newline
-5 Unless the component is an extremely large or awkward item.\newline
-6 Some combat maneuvers substitute for a melee attack, not an action. As melee attacks, they can be used once in an attack or charge action, one or more times in a full-attack action, or even as an attack of opportunity. Others are used as a separate action.\newline
-7 The description of a feat defines its effect.
-\end{table}
+\setlength{\tabcolsep}{1pt}
+\caption{Actions in Combat}
+\begin{tabular}{lclc}
+                                                 & \textbf{Attack of}    &                                           & \textbf{Attack of}    \\
+\textbf{Standard Action}                         & \textbf{Opportunity\(^{1}\)} & \textbf{Full-Round Action}         & \textbf{Opportunity\(^{1}\)} \\
+Attack (melee)                                   & No                    & Full attack                               & No                    \\
+Attack (ranged)                                  & Yes                   & Charge\(^{4}\)                            & No                    \\
+Attack (unarmed)                                 & Yes                   & Deliver coup de grace                     & Yes                   \\
+Activate a magic item other than a potion or oil & No                    & Escape from a net                         & Yes                   \\
+Aid another                                      & Maybe\(^{2}\)         & Extinguish flames                         & No                    \\
+Cast a spell (1 standard action casting time)    & Yes                   & Light a torch                             & Yes                   \\
+Channel energy                                   & No                    & Load a heavy or repeating crossbow        & Yes                   \\
+Concentrate to maintain an active spell          & No                    & Lock or unlock weapon in locked gauntlet  & Yes                   \\
+Dismiss a spell                                  & No                    & Prepare to throw splash weapon            & Yes                   \\
+Draw a hidden weapon (see Sleight of Hand skill) & No                    & Run                                       & Yes                   \\
+Drink a potion or apply an oil                   & Yes                   & Use skill that takes 1 round              & Usually               \\
+Escape a grapple                                 & No                    & Use a touch spell on up to six friends    & Yes                   \\
+Feint                                            & No                    & Withdraw\(^{4}\)                          & No                    \\
+Light a torch with a tindertwig                  & Yes                   &                                           & \textbf{Attack of}    \\
+Lower spell resistance                           & No                    & \textbf{Free Action}                      & \textbf{Opportunity\(^{1}\)} \\
+Read a scroll                                    & Yes                   & Cease concentration on a spell            & No                    \\
+Ready (triggers a standard action)               & No                    & Drop an item                              & No                    \\
+Stabilize a dying friend (see Heal skill)        & Yes                   & Drop to the floor                         & No                    \\
+Total defense                                    & No                    & Prepare spell components to cast a spell\(^{5}\) & No                    \\
+Use extraordinary ability                        & No                    & Speak                                     & No                    \\
+Use skill that takes 1 action                    & Usually               &                                           & \textbf{Attack of}    \\
+Use spell-like ability                           & Yes                   & Swift Action                              & \textbf{Opportunity\(^{1}\)} \\
+Use supernatural ability                         & No                    & Cast a quickened spell                    & No                    \\
+                                                 & \textbf{Attack of}    &                                           & \textbf{Attack of}    \\
+\textbf{Move Action}                             & \textbf{Opportunity\(^{1}\)} & \textbf{Immediate Action}          & \textbf{Opportunity\(^{1}\)} \\
+Move                                             & Yes                   & Cast feather fall                         & No                    \\
+Control a frightened mount                       & Yes                   &                                           & \textbf{Attack of}    \\
+Direct or redirect an active spell               & No                    & \textbf{No Action}                        & \textbf{Opportunity\(^{1}\)} \\
+Draw a weapon\(^{3}\)                            & No                    & Delay                                     & No                    \\
+Load a hand crossbow or light crossbow           & Yes                   & 5-foot step                               & No                    \\
+Open or close a door                             & No                    &                                           & \textbf{Attack of}    \\
+Mount/dismount a steed                           & No                    & \textbf{Action Type Varies}               & \textbf{Opportunity\(^{1}\)} \\
+Move a heavy object                              & Yes                   & Perform a combat maneuver\(^{6}\)         & Yes                   \\
+Pick up an item                                  & Yes                   & Use feat\(^{7}\)                          & Varies                \\
+Sheathe a weapon                                 & Yes                   &                                           &                       \\
+Stand up from prone                              & Yes                   &                                           &                       \\
+Ready or drop a shield\(^{3}\)                   & No                    &                                           &                       \\
+Retrieve a stored item                           & Yes                   &                                           &                      \\
+\end{tabular}\\
+\textsuperscript{1} Regardless of the action, if you move out of a threatened square, you usually provoke an attack of opportunity. This column indicates whether the action itself, not moving, provokes an attack of opportunity.\newline
+\textsuperscript{2} If you aid someone performing an action that would normally provoke an attack of opportunity, then the act of aiding another provokes an attack of opportunity as well.\newline
+\textsuperscript{3} If you have a base attack bonus of +1 or higher, you can combine one of these actions with a regular move. If you have the Two-Weapon Fighting feat, you can draw two light or one-handed weapons in the time it would normally take you to draw one.\newline
+\textsuperscript{4} May be taken as a standard action if you are limited to taking only a single action in a round.\newline
+\textsuperscript{5} Unless the component is an extremely large or awkward item.\newline
+\textsuperscript{6} Some combat maneuvers substitute for a melee attack, not an action. As melee attacks, they can be used once in an attack or charge action, one or more times in a full-attack action, or even as an attack of opportunity. Others are used as a separate action.\newline
+\textsuperscript{7} The description of a feat defines its effect.
+\end{table*}
 
 				
 During one turn, there are a wide variety of actions that your character can perform, from swinging a sword to casting a spell.
@@ -867,18 +834,17 @@ If movement cost is doubled twice, then each square counts as 4 squares (or as 6
 				
 \textbf{Minimum Movement}: Despite whatever penalties to movement you might have, you can take a full-round action to move 5 feet (1 square) in any direction, even diagonally. This rule doesn't allow you to move through impassable terrain or to move when all movement is prohibited. Such movement provokes attacks of opportunity as normal (despite the distance covered, this move isn't a 5-foot step).
 % <div align="center">
-\fbox{\texttt{TacticalMovement.jpg \footnotemark}}
-% <tfoot src="../image/TacticalMovement.jpg">
 
-The fighter's first move costs him 5 feet (or 1 square). His next costs 5 feet also, but his third (his 2nd diagonal) costs him 10 feet. Next he moves into difficult terrain, also costing him 10 feet. At this point (\#6), the fighter has moved 30 feet---one move action. The last square is a diagonal move in difficult terrain, which costs 15 feet; he must spend his turn's standard action to move this far.\newline
+\begin{figure}
+ \sffamily
+ \caption{Tactical Movement}
+ \includegraphics[width=\linewidth]{images/TacticalMovement.jpg}
+ The fighter's first move costs him 5 feet (or 1 square). His next costs 5 feet also, but his third (his 2nd diagonal) costs him 10 feet. Next he moves into difficult terrain, also costing him 10 feet. At this point (\#6), the fighter has moved 30 feet---one move action. The last square is a diagonal move in difficult terrain, which costs 15 feet; he must spend his turn's standard action to move this far.\newline
 The Large ogre's move costs a total of 20 feet worth of movement (or 4 squares). The ogre cannot cut across the corner to get to that location, and must fully move around it, as indicated.
-% </tfoot /="">
-
-% </div /="">
-
+\end{figure}
 
 \section{Big And Little Creatures In Combat}
-% <
+
 \begin{table}[]
 \sffamily
 \caption{Table: Creature Size and Scale}
@@ -897,7 +863,7 @@ Fine & 1/2 ft. & 0 \\
  Gargantuan (long) & 20 ft. & 15 ft. \\
  Colossal (tall) & 30 ft. & 30 ft. \\
  Colossal (long) & 30 ft. & 20 ft.\\
-\end{tabular}
+\end{tabular}\\
 * These values are typical for creatures of the indicated size. Some exceptions exist.\\
 \end{table}
 				
@@ -920,7 +886,7 @@ Large or larger creatures using reach weapons can strike up to double their natu
 \sffamily
 \caption{Table: Attack Roll Modifiers}
 \begin{tabular}{lll}
-\textbf{Attacker is…} & \textbf{Melee} & \textbf{Ranged}\\
+\textbf{Attacker is...} & \textbf{Melee} & \textbf{Ranged}\\
 Dazzled & --1 & --1\\
 Entangled & --2 & --2\\
 Flanking defender & +2 & —\\
@@ -929,12 +895,12 @@ On higher ground & +1 & +0\\
 Prone & --4 & —\\
 Shaken, frightened & --2 & --2\\
 Squeezing through a space & --4 & --4\\
-\end{tabular}
-1 An entangled character also takes a --4 penalty to Dexterity, which may affect his attack roll.
-2 The defender loses any Dexterity bonus to AC.
-3 Most ranged weapons can't be used while the attacker is prone, but you can use a crossbow or shuriken while prone at no penalty.
+\end{tabular}\\
+\textsuperscript{1} An entangled character also takes a --4 penalty to Dexterity, which may affect his attack roll.\\
+\textsuperscript{2} The defender loses any Dexterity bonus to AC.\\
+\textsuperscript{3} Most ranged weapons can't be used while the attacker is prone, but you can use a crossbow or shuriken while prone at no penalty.\\
 \end{table}
-% <
+
 \begin{table}[]
 \sffamily
 \caption{Table: Armor Class Modifiers}
@@ -953,15 +919,15 @@ Pinned & --4\(^{3}\) & +0\(^{3}\)\\
 Prone & --4 & +4\\
 Squeezing through a space & --4 & --4\\
 Stunned & --2\(^{1}\) & --2\(^{1}\)\\
-\end{tabular}
-1 The defender loses any Dexterity bonus to AC.
-2 An entangled character takes a --4 penalty to Dexterity.
-3 The defender is denied his Dexterity bonus to his Armor Class.
+\end{tabular}\\
+\textsuperscript{1} The defender loses any Dexterity bonus to AC.\\
+\textsuperscript{2} An entangled character takes a --4 penalty to Dexterity.\\
+\textsuperscript{3} The defender is denied his Dexterity bonus to his Armor Class.\\
 \end{table}
 
-				
+
 A number of factors and conditions can influence an attack roll. Many of these situations grant a bonus or penalty on attack rolls or to a defender's Armor Class.
-				
+
 \subsection{Cover}
 
 				
@@ -986,17 +952,16 @@ When making a melee attack against an adjacent target, your target has cover if 
 \textbf{Total Cover}: If you don't have line of effect to your target (that is, you cannot draw any line from your square to your target's square without crossing a solid barrier), he is considered to have total cover from you. You can't make an attack against a target that has total cover.
 				
 \textbf{Improved Cover}: In some cases, such as attacking a target hiding behind an arrowslit, cover may provide a greater bonus to AC and Reflex saves. In such situations, the normal cover bonuses to AC and Reflex saves can be doubled (to +8 and +4, respectively). A creature with this improved cover effectively gains improved evasion against any attack to which the Reflex save bonus applies. Furthermore, improved cover provides a +10 bonus on Stealth checks.
-% <div align="center">
-\fbox{\texttt{Cover.jpg \footnotemark}}
-% <tfoot src="../image/Cover.jpg">
 
+\begin{figure}
+\sffamily
+\caption{Cover}
+\includegraphics[width=\linewidth]{images/Cover.jpg}
 \#1: The fighter is adjacent to the ogre, and nothing blocks him from reaching it. The ogre does not have cover against the fighter.\newline
 \#2: The rogue is adjacent to the ogre, but lines from the corners of her square to the corners of the ogre's square cross through a wall. The ogre has melee cover from her, but if it attacks her, the rogue does not have cover from it, as the ogre has reach (so it figures attacks as if attacking with a ranged weapon).\newline
 \#3: The cleric attacks at range, and must pick one of the corners of her square to determine cover. Some of these lines pass through a solid surface, meaning that the ogre has cover.\newline
 \#4: The sorcerer attacks at range as well, but her lines reveal that she can clearly see more than half of the ogre. This gives the ogre partial cover.
-% </tfoot /="">
-
-% </div /="">
+\end{figure}
 
 				
 \subsection{Concealment}
@@ -1032,18 +997,16 @@ When in doubt about whether two characters flank an opponent in the middle, trac
 Only a creature or character that threatens the defender can help an attacker get a flanking bonus.
 				
 Creatures with a reach of 0 feet can't flank an opponent.
-% <div align="center">
-\fbox{\texttt{Flanking.jpg \footnotemark}}
-% <tfoot src="../image/Flanking.jpg">
 
+\begin{figure}
+\sffamily
+\caption{Flanking}
+\includegraphics[width=\linewidth]{images/Flanking.jpg}
 \#1: The fighter and the cleric are flanking the ogre because they can draw a line to each other that passes through opposite sides of the ogre. Both the fighter and the cleric receive a +2 bonus on attack rolls made against the ogre.\newline
 \#2: The rogue is not flanking the ogre because she cannot draw a line to the fighter or the cleric that passes through opposite sides of the ogre. The rogue cannot draw a line to the sorcerer because the sorcerer is not adjacent to the ogre and does not threaten it.\newline
 \#3: The goblin and the ogre flank the sorcerer, as they can draw a line between them that passes through opposite sides of the sorcerer's square. If the ogre didn't have reach to the sorcerer, though, he and the goblin would not be flanking her.
-% </tfoot /="">
+\end{figure}
 
-% </div /="">
-
-				
 \subsection{Helpless Defenders}
 
 				

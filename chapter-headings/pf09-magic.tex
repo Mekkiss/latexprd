@@ -387,11 +387,14 @@ If a ray spell has a duration, it's the duration of the effect that the ray caus
 If a ray spell deals damage, you can score a critical hit just as if it were a weapon. A ray spell threatens a critical hit on a natural roll of 20 and deals double damage on a successful critical hit.
 				
 \textit{Spread}: Some effects, notably clouds and fogs, spread out from a point of origin, which must be a grid intersection. The effect can extend around corners and into areas that you can't see. Figure distance by actual distance traveled, taking into account turns the spell effect takes. When determining distance for spread effects, count around walls, not through them. As with movement, do not trace diagonals across corners. You must designate the point of origin for such an effect, but you need not have line of effect (see below) to all portions of the effect.
-% <div class="right">
-SpellAreas\fbox{\texttt{SpellAreas.jpg \footnotemark}}
-% </div src="../image/SpellAreas.jpg">
 
-				
+
+\begin{figure}
+ \sffamily
+ \caption{Spell Areas}
+ \includegraphics[width=\linewidth]{images/SpellAreas.jpg}
+\end{figure}
+
 \textbf{Area}: Some spells affect an area. Sometimes a spell description specifies a specially defined area, but usually an area falls into one of the categories defined below.
 				
 Regardless of the shape of the area, you select the point where the spell originates, but otherwise you don't control which creatures or objects the spell affects. The point of origin of a spell is always a grid intersection. When determining whether a given creature is within the area of a spell, count out the distance from the point of origin in squares just as you do when moving a character or when determining the range for a ranged attack. The only difference is that instead of counting from the center of one square to the center of the next, you count from intersection to intersection.

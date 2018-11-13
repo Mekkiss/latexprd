@@ -181,6 +181,7 @@ To determine a character's height, roll the modifier dice indicated on Table: Ra
 \begin{table}[htb]
 \sffamily
 \rowcolors{1}{white}{offyellow}
+\setlength{\tabcolsep}{1pt}
 \caption{Random Height and Weight}
 \begin{tabular}{lllll}
               & \textbf{Base}   & \textbf{Height}   & \textbf{Base}   & \textbf{Weight}\\
@@ -446,6 +447,7 @@ Waterborne Movement: See Table: Mounts and Vehicles: Mounts and Vehicles for spe
 \begin{table}[htb]
 \sffamily
 \rowcolors{1}{white}{offyellow}
+\setlength{\tabcolsep}{1pt}
 \caption{Mounts and Vehicles}
 \begin{tabular}{lll}
 \textbf{Mount/Vehicle} & \textbf{Per Hour} & \textbf{Per Day}\\
@@ -502,13 +504,13 @@ Dwarves and half-orcs have darkvision, but the other races presented in Races ne
 \sffamily
 \rowcolors{1}{white}{offyellow}
 \caption{Light Sources and Illumination}
-\centering
-\begin{tabular}{l c c c}
+\begin{tabular}{lccc}
 \textbf{Object} & \textbf{Bright} & \textbf{Shadowy} & \textbf{Duration}\\
 Candle & n/a\textsuperscript{1} & 5 ft. & 1 hr.\\
 Common Lamp & 15 ft. & 30 ft. & 6 hr./pint\\
 Everburning torch & 20 ft. & 40 ft. & Permanent\\
-Lantern (bullseye)\textsuperscript{2} & 60-ft. cone & 120-ft. cone & 6 hr./pint\\
+Lantern (bullseye)\textsuperscript{2} & 60-ft. & 120-ft. & 6 hr./pint\\
+                                      & cone  & cone & \\
 Lantern (hooded) & 30 ft. & 60 ft. & 6 hr./pint\\
 Sunrod & 30 ft. & 60 ft. & 6 hr.\\
 Torch & 20 ft. & 40 ft. & 1 hr.\\
@@ -517,9 +519,9 @@ Continual flame & 20 ft. & 40 ft. & Permanent\\
 Dancing lights (torches) & 20 ft. (each) & 40 ft. (each) & 1 min.\\
 Daylight & 60 ft. & 120 ft. & 30 min.\\
 Light & 20 ft. & 40 ft. & 10 min.\\
-\multicolumn{4}{l}{\textsuperscript{1} A candle does not provide bright illumination, only shadowy illumination.}\\
-\multicolumn{4}{l}{\textsuperscript{2} A bullseye lantern illuminates a cone, not a radius.}\\
-\end{tabular}
+\end{tabular}\\
+\textsuperscript{1} A candle does not provide bright illumination, only shadowy illumination.\\
+\textsuperscript{2} A bullseye lantern illuminates a cone, not a radius.\\
 \end{table}
 
 % </div colspan="4">
@@ -596,7 +598,7 @@ Break down iron door & 28\\
 \textbf{Condition} & \textbf{DC Adjustment*}\\
 \textit{Hold portal} & +5\\
 \textit{Arcane lock} & +10\\
-\end{tabular}
+\end{tabular}\\
 * If both apply, use the larger number.
 \end{table}
 		
@@ -667,7 +669,7 @@ Light blade & 10 & 2 \\
  Light steel shield & 10 & 10 \\
  Heavy steel shield & 10 & 20 \\
  Tower shield & 5 & 20\\
-\end{tabular}
+\end{tabular}\\
 \(^{1}\) Add +2 for each +1 enhancement bonus of magic items.\\
 \(^{2}\) The hp value given is for Medium armor, weapons, and shields. Divide by 2 for each size category of the item smaller than Medium, or multiply it by 2 for each size category larger than Medium.\\
 \(^{3}\) Add 10 hp for each +1 enhancement bonus of magic items.\\

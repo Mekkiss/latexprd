@@ -121,9 +121,9 @@ A weapon's size category isn't the same as its size as an object. Instead, a wea
 The measure of how much effort it takes to use a weapon (whether the weapon is designated as a light, one-handed, or two-handed weapon for a particular wielder) is altered by one step for each size category of difference between the wielder's size and the size of the creature for which the weapon was designed. For example, a Small creature would wield a Medium one-handed weapon as a two-handed weapon. If a weapon's designation would be changed to something other than light, one-handed, or two-handed by this alteration, the creature can't wield the weapon at all.
 		
 \textbf{Improvised Weapons}: Sometimes objects not crafted to be weapons nonetheless see use in combat. Because such objects are not designed for this use, any creature that uses an improvised weapon in combat is considered to be nonproficient with it and takes a --4 penalty on attack rolls made with that object. To determine the size category and appropriate damage for an improvised weapon, compare its relative size and damage potential to the weapon list to find a reasonable match. An improvised weapon scores a threat on a natural roll of 20 and deals double damage on a critical hit. An improvised thrown weapon has a range increment of 10 feet.
-		
 \begin{table*}[]
 \sffamily
+\setlength{\tabcolsep}{1pt}
 \caption{Table: Weapons}
 \begin{tabular}{lllllllll}
 \textbf{Simple Weapons} & \textbf{Cost} & \textbf{Dmg (S)} & \textbf{Dmg (M)} & \textbf{Critical} & \textbf{Range} & \textbf{Weight} & \textbf{Type} & \textbf{Special}\\
@@ -180,6 +180,13 @@ The measure of how much effort it takes to use a weapon (whether the weapon is d
  Spiked shield & heavy, special & 1d4 & 1d6 & $\times$2 & - & special & P & - \\
  Trident & 15 gp & 1d6 & 1d8 & $\times$2 & 10 ft. & 4 lbs. & P & brace \\
  Warhammer & 12 gp & 1d6 & 1d8 & $\times$3 & - & 5 lbs. & B & - \\
+ \end{tabular}
+ \end{table*}
+ 
+ \begin{table*}
+  \sffamily
+  \begin{tabular}{lllllllll}
+\textbf{Martial Weapons (cont.)} & \textbf{Cost} & \textbf{Dmg (S)} & \textbf{Dmg (M)} & \textbf{Critical} & \textbf{Range} & \textbf{Weight} & \textbf{Type} & \textbf{Special}\\
  \textit{Two-Handed Melee Weapons} \\
  Falchion & 75 gp & 1d6 & 2d4 & 18-20/$\times$2 & - & 8 lbs. & S & - \\
  Glaive & 8 gp & 1d8 & 1d10 & $\times$3 & - & 10 lbs. & S & reach \\
@@ -231,8 +238,11 @@ The measure of how much effort it takes to use a weapon (whether the weapon is d
  Shuriken (5) & 1 gp & 1 & 1d2 & $\times$2 & 10 ft. & 1/2 lb. & P & monk \\
  Sling staff, halfling & 20 gp & 1d6 & 1d8 & $\times$3 & 80 ft. & 3 lbs. & B & - \\
  Bullets, sling (10) & 1 sp & - & - & - & - & 5 lbs. & - & -\\
-\end{tabular}
+\end{tabular}\\
+\textsuperscript{1} Weight figures are for Medium weapons. A Small weapon weighs half as much, and a Large weapon weighs twice as much.\\
+\textsuperscript{2} A weapon with two types is both types if the entry specifies "and," or either type (wielder's choice) if the entry specifies "or."\\
 \end{table*}
+
 
 \subsection{Weapon Qualities}
 
@@ -517,6 +527,7 @@ A character's encumbrance (the amount of gear carried, including armor) may also
 
 \begin{table*}[]
 \sffamily
+\setlength{\tabcolsep}{1pt}
 \caption{Table: Armor and Shields}
 \begin{tabular}{lllllllll}
                         &      & \textbf{Armor/Shield} & \textbf{Maximum} & \textbf{Armor Check} & \textbf{Arcane Spell} & \multicolumn{2}{c}{\textbf{Speed}} &  \\
@@ -536,14 +547,14 @@ A character's encumbrance (the amount of gear carried, including armor) may also
  Banded mail& 250 gp& +7& +1& -6& 35\%& 20 ft.& 15 ft.& 35 lbs. \\
  Half-plate& 600 gp& +8& +0& -7& 40\%& 20 ft.& 15 ft.& 50 lbs. \\
  Full plate& 1,500 gp& +9& +1& -6& 35\%& 20 ft.& 15 ft.& 50 lbs. \\
- Shields   \\
+ \textit{Shields}   \\
  Buckler& 5 gp& +1& -& -1& 5\%& -& -& 5 lbs. \\
  Shield, light wooden& 3 gp& +1& -& -1& 5\%& -& -& 5 lbs. \\
  Shield, light steel& 9 gp& +1& -& -1& 5\%& -& -& 6 lbs. \\
  Shield, heavy wooden& 7 gp& +2& -& -2& 15\%& -& -& 10 lbs. \\
  Shield, heavy steel& 20 gp& +2& -& -2& 15\%& -& -& 15 lbs. \\
  Shield, tower& 30 gp& +4& +2& -10& 50\%& -& -& 45 lbs. \\
- Extras   \\
+ \textit{Extras}   \\
  Armor spikes& +50 gp& -& -& -& -& -& -& +10 lbs. \\
  Gauntlet, locked& 8 gp& -& -& special& n/a& -& -& +5 lbs. \\
  Shield spikes& +10 gp& -& -& -& -& -& -& +5 lbs.\\
@@ -655,7 +666,8 @@ The time required to don armor depends on its type; see Table: Donning Armor.
 		
 \textbf{Remove}: This column tells how long it takes to get the armor off. Removing a shield from the arm and dropping it is only a move action.
 
-\begin{table}[]
+\begin{table*}[]
+\sffamily
 \caption{Table: Donning Armor}
 \begin{tabular}{llll}
 \textbf{Armor Type} & \textbf{Don} & \textbf{Don Hastily} & \textbf{Remove}\\
@@ -663,10 +675,10 @@ Shield (any) & 1 move action &  n/a & 1 move action \\
 Padded, leather, hide, studded leather, or chain shirt & 1 minute & 5 rounds & 1 minute \\
 Breastplate, scale mail, chainmail, banded mail, or splint mail & 4 minutes & 1 minute & 1 minute \\
 Half-plate or full plate & 4 minutes & 4 minutes & 1d4+1 minutes\\
-\end{tabular}
-\(^{1}\) If the character has some help, cut this time in half. A single character doing nothing else can help one or two adjacent characters. Two characters can't help each other don armor at the same time.
-\(^{2}\) The wearer must have help to don this armor. Without help, it can be donned only hastily.
-\end{table}
+\end{tabular}\\
+\(^{1}\) If the character has some help, cut this time in half. A single character doing nothing else can help one or two adjacent characters. Two characters can't help each other don armor at the same time.\\
+\(^{2}\) The wearer must have help to don this armor. Without help, it can be donned only hastily.\\
+\end{table*}
 
 \section{Special Materials}
 	
@@ -739,20 +751,18 @@ Alchemical silver has 10 hit points per inch of thickness and hardness 8.
 			
 \begin{table}
  \sffamily
- \begin{tabular}{ll}
+ \begin{tabularx}{\linewidth}{Xl}
   \textbf{Type of Alchemical Silver Item} & \textbf{Item Cost Modifier} \\
   Ammunition & +2 gp\\
   Light weapon & +20 gp\\
   One-handed weapon, or one head of a double weapon & +90 gp \\
   Two-handed weapon, or both heads of a double weapon & +180 gp 
- \end{tabular}
+ \end{tabularx}
 \end{table}
 	
 \section{Goods And Services}
-\begin{table*}[]
-\sffamily
-\caption{Table: Goods and Services}
-\begin{tabular}{lll}
+\captionof{table}{Goods and Services}
+\begin{xtabular}{lll}
 \textit{Adventuring Gear}\\
 \textbf{Item} & \textbf{Cost} & \textbf{Weight}\\
 Backpack (empty) & 2 gp & 2 lbs. \\
@@ -930,7 +940,9 @@ Carriage & 100 gp & 600 lbs. \\
  Sled & 20 gp & 300 lbs. \\
  Wagon & 35 gp & 400 lbs. \\
  Warship & 25,000 gp & -\\
-\textit{Spellcasting and Services} \\
+ \end{xtabular}
+ \begin{xtabular}{ll}
+\multicolumn{2}{l}{\textit{Spellcasting and Services}} \\
  Service & Cost\\
 Coach cab & 3 cp per mile\\
 Hireling, trained & 3 sp per day\\
@@ -939,13 +951,13 @@ Messenger & 2 cp per mile\\
 Road or gate toll & 1 cp\\
 Ship's passage & 1 sp per mile\\
 Spellcasting & Caster level $\times$ spell level $\times$ 10 gp\\
-\end{tabular}
---- No weight, or no weight worth noting.
-\(^{1}\) These items weigh one-quarter this amount when made for Small characters. Containers for Small characters also carry one-quarter the normal amount.
-\(^{2}\) Relative to similar armor made for a Medium humanoid.
-\(^{3}\) See spell description for additional costs. If the additional costs put the spell's total cost above 3,000 gp, that spell is not generally available. Use a spell level of \mbox{$\frac12$} for 0-level spells to calculate the cost.
+\end{xtabular}\\
+--- No weight, or no weight worth noting.\\
+\(^{1}\) These items weigh one-quarter this amount when made for Small characters. Containers for Small characters also carry one-quarter the normal amount.\\
+\(^{2}\) Relative to similar armor made for a Medium humanoid.\\
+\(^{3}\) See spell description for additional costs. If the additional costs put the spell's total cost above 3,000 gp, that spell is not generally available. Use a spell level of \mbox{$\frac12$} for 0-level spells to calculate the cost.\\
 
-\end{table*}
+%\end{table}
 	
 Beyond armor and weapons, a character can carry a whole variety of gear, from rations (to sustain him on long travels), to rope (which is useful in countless circumstances). Most of the common gear carried by adventurers is summarized on Table: Goods and Services.
 	
