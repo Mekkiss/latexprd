@@ -3,12 +3,11 @@
 % Please add the following required packages to your document preamble:
 % \usepackage[normalem]{ulem}
 % \useunder{\uline}{\ul}{}
-\begin{table}[]
-\sffamily
-\caption{Minor Wondrous Items}
+
+\captionof{table}{Minor Wondrous Items}
 \setlength{\tabcolsep}{1pt}
-\begin{tabularx}{\linewidth}{lXl}
-\textbf{d\%} & \textbf{Item}                                        & \textbf{Market Price} \\
+\begin{xtabular}{lll}
+\textbf{d\%} & \textbf{Item}                      & \textbf{Market Price} \\
 01  & Feather token, anchor                       & 50 gp        \\
 02  & Universal solvent                           & 50 gp        \\
 03  & Elixir of love                              & 150 gp       \\
@@ -109,14 +108,11 @@
 98  & Periapt of health                           & 7,400 gp     \\
 99  & Boots of levitation                         & 7,500 gp     \\
 100 & Harp of charming                            & 7,500 gp    
-\end{tabularx}
-\end{table}
+\end{xtabular}
 
-\begin{table}[]
-\sffamily
-\caption{Medium Wondrous Items}
+\captionof{table}{Medium Wondrous Items}
 \setlength{\tabcolsep}{1pt}
-\begin{tabularx}{\linewidth}{lXl}
+\begin{xtabular}{lll}
 d\% & Item                                        & Market Price \\
 01  & Amulet of natural armor +2                  & 8,000 gp     \\
 02  & Golem manual, flesh                         & 8,000 gp     \\
@@ -218,14 +214,11 @@ d\% & Item                                        & Market Price \\
 98  & Tome of clear thought +1                    & 27,500 gp    \\
 99  & Tome of leadership and influence +1         & 27,500 gp    \\
 100 & Tome of understanding +1                    & 27,500 gp   
-\end{tabularx}
-\end{table}
+\end{xtabular}
 
-\begin{table}[]
-\sffamily
-\caption{Major Wondrous Items}
+\captionof{table}{Major Wondrous Items}
 \setlength{\tabcolsep}{1pt}
-\begin{tabularx}{\linewidth}{lXl}
+\begin{xtabular}{lll}
 d\% & Item                                           & Market Price \\
 01  & Dimensional shackles                           & 28,000 gp    \\
 02  & Figurine of wondrous power, obsidian steed     & 28,500 gp    \\
@@ -327,8 +320,7 @@ d\% & Item                                           & Market Price \\
 98  & Cubic gate                                     & 164,000 gp   \\
 99  & Iron flask                                     & 170,000 gp   \\
 100 & Mirror of life trapping                        & 200,000 gp  
-\end{tabularx}
-\end{table}
+\end{xtabular}
 
 \label{f0}				
 This is a catch all category for anything that doesn't fall into the other groups. Anyone can use a wondrous item (unless specified otherwise in the description).
@@ -413,7 +405,7 @@ Construction
 Description
 				
 At first glance, an inactive \textit{apparatus of the crab} appears to be a large, sealed iron barrel big enough to hold two Medium creatures. Close examination, and a DC 20 Perception check, reveals a secret catch that opens a hatch at one end. Anyone who crawls inside finds 10 (unlabeled) levers and seating for two Medium or Small occupants. These levers allow those inside to activate and control the apparatus's movements and actions.
-% <thead class="stat-block-breaker">
+
 \begin{tabular}{ll}
 \textbf{Lever (1d10)} & \textbf{Lever Function}\\
 1 & Extend/retract legs and tail\\
@@ -1244,12 +1236,14 @@ King of diamonds       & Two of cups            & Male elf wizard \\
                        &                        & and female apprentice   \\
 Queen of diamonds      & Queen of swords        & Half-elf ranger                         \\
 Jack of diamonds       & XIV. Temperance        & Harpy                                   \\
-Ten of diamonds        & Seven of staves        & Male half-orc barbarian                 \\
+Ten of diamonds        & Seven of staves        & Male half-orc \\
+                       &                        & barbarian                 \\
 Nine of diamonds       & Four of pentacles      & Ogre mage                               \\
 Eight of diamonds      & Ace of pentacles       & Gnoll                                   \\
 Two of diamonds        & Six of pentacles       & Kobold                                  \\
 \textbf{Playing Card}  & \textbf{Tarot Card}    & \textbf{Creature}                       \\
-Ace of spades          & II. The High Priestess & Lich                                    \\
+Ace of spades          & II. The High           & Lich                                    \\
+                       & Priestess              &                                         \\
 King of spades         & Three of staves        & Three human clerics                     \\
 Queen of spades        & Four of cups           & Medusa                                  \\
 Jack of spades         & Knight of pentacles    & Male dwarf paladin                      \\
@@ -1267,9 +1261,10 @@ Nine of clubs          & King of swords         & Ogre                          
 Eight of clubs         & Ace of staves          & Orc                                     \\
 Two of clubs           & Five of cups           & Kobold                                  \\
 \textbf{Playing Card}  & \textbf{Tarot Card}    & \textbf{Creature}                       \\
-Joker                  & Two of pentacles       & Illusion of deck's owner                \\
-Joker (with trademark) & Two of staves          & Illusion of deck's \\
-                       &                        & owner (sex reversed)
+Joker                  & Two of pentacles       & Illusion of deck's \\
+                       &                        & owner                \\
+Joker                  & Two of staves          & Illusion of deck's \\
+ (with trademark)      &                        & owner (sex reversed)
 \end{tabularx}				
 A randomly generated deck is usually complete (11--100 on d\%), but may be discovered (01--10) with 1d20 of its cards missing. If cards are missing, reduce the price by a corresponding amount. 
 				
@@ -2203,10 +2198,10 @@ Pale green         & Prism          & +1 competence bonus on attack rolls, saves
 Orange             & Prism          & +1 caster level                                                              & 30,000 gp             \\
 Vibrant purple     & Prism          & Stores three levels of spells, as a ring of spell storing                    & 36,000 gp             \\
 Lavender and green & Ellipsoid      & Absorbs spells of 8th level or lower\textsuperscript{3}                      & 40,000 gp             \\
-\end{tabular}
-\(^{1}\) This stone has one skill associated with it, as a \emph{+2 headband of vast intelligence}
-\(^{2}\) After absorbing 20 spell levels, the stone burns out and turns to dull gray, forever useless.
-\(^{3}\) After absorbing 50 spell levels, the stone burns out and turns dull gray, forever useless.
+\end{tabular}\\
+\(^{1}\) This stone has one skill associated with it, as a \emph{+2 headband of vast intelligence}\\
+\(^{2}\) After absorbing 20 spell levels, the stone burns out and turns to dull gray, forever useless.\\
+\(^{3}\) After absorbing 50 spell levels, the stone burns out and turns dull gray, forever useless.\\
 \end{figure*}
 
 				
@@ -2246,33 +2241,21 @@ The command word can be used only once per day.
 				
 If the individual freeing the captured creature speaks the command word, the creature can be forced to serve for 1 hour. If freed without the command word, the creature acts according to its natural inclinations. (It usually attacks the user, unless it perceives a good reason not to.) Any attempt to force the same creature into the flask a second time provides it a +2 bonus on its saving throw and makes it hostile. A newly discovered bottle might contain any of the following:\\
 
-\begin{tabular}{ll}
-\textbf{d\%} & \textbf{Contents}     \\
-01--50        & Empty                 \\
-51--54        & Large air elemental   \\
-55--58        & Invisible stalker     \\
-59--62        & Large earth elemental \\
-63--66        & Xorn                  \\
-67--70        & Large fire elemental  \\
-71--74        & Salamander 95         \\
-75--78        & Large water elemental \\
-79--82        & Xill                  \\
-83--85        & Yeth hound            \\
-86           & Demon (shadow)        \\
-87           & Demon (vrock)         \\
+\begin{tabular}{llll}
+\textbf{d\%} & \textbf{Contents}     & \textbf{d\%} & \textbf{Contents}     \\
+01--50        & Empty                 & 89           & Demon (glabrezu)      \\
+51--54        & Large air elemental   & 90           & Demon (succubus)      \\
+55--58        & Invisible stalker     & 91           & Devil (osyluth)       \\
+59--62        & Large earth elemental & 92           & Devil (barbazu)       \\
+63--66        & Xorn                  & 93           & Devil (erinyes)       \\
+67--70        & Large fire elemental  & 94           & Devil (cornugon)      \\
+71--74        & Salamander            & 95           & Agathion (avoral)     \\
+75--78        & Large water elemental & 96           & Azata (ghaele)        \\
+79--82        & Xill                  & 97           & Archon (trumpet)      \\
+83--85        & Yeth hound            & 98           & Rakshasa              \\
+86           & Demon (shadow)         & 99           & Demon (balor)         \\
+87           & Demon (vrock)          & 100          & Devil (pit fiend)    \\
 88           & Demon (hezrou)        \\
-89           & Demon (glabrezu)      \\
-90           & Demon (succubus)      \\
-91           & Devil (osyluth)       \\
-92           & Devil (barbazu)       \\
-93           & Devil (erinyes)       \\
-94           & Devil (cornugon)      \\
-95           & Agathion (avoral)     \\
-96           & Azata (ghaele)        \\
-97           & Archon (trumpet)      \\
-98           & Rakshasa              \\
-99           & Demon (balor)         \\
-100          & Devil (pit fiend)    
 \end{tabular} 
 
 Construction
@@ -2526,7 +2509,8 @@ This item appears to be a string of beads, sometimes with the ends tied together
 Spheres come in different strengths, ranging from those that deal 2d6 points of fire damage to those that deal 10d6. The market price of a sphere is 150 gp for each die of damage it deals.
 \begin{figure*}[]
 \sffamily
-\textbf{Necklace of Fireballs}
+\textbf{Necklace of Fireballs}\\
+\setlength{\tabcolsep}{10pt}
 \begin{tabular}{lllllllllll}
 \textbf{Necklace} & \textbf{10d6} & \textbf{9d6} & \textbf{8d6} & \textbf{7d6} & \textbf{6d6} & \textbf{5d6} & \textbf{4d6} & \textbf{3d6} & \textbf{2d6} & \textbf{Market Price} \\
 Type I            & ---             & ---            & ---            & ---            & ---            & 1            & ---            & 2            & ---            & 1,650 gp              \\
