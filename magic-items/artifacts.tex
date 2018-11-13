@@ -20,19 +20,10 @@ Minor artifacts are not necessarily unique items. Even so, they are magic items 
 				
 Description
 				
-
-% <span class="stat-description-char">
 This work bestows upon any character of any class the ability to use the spells within its pages. However, any character not already able to use spells gains one 
-% </span class="stat-description-char">
-negative level 
-% <span class="stat-description-char">
-for as long as the book is in her possession or while she uses its power. A 
-% </span class="stat-description-char">
+negative level for as long as the book is in her possession or while she uses its power. A 
 \textit{book of infinite spells}
-% <span class="stat-description-char">
  contains 1d8+22 pages. The nature of each page is determined by a d\% roll: 01--50, arcane spell; 51--100, divine spell. 
-% </span class="stat-description-char">
-
 				
 Determine the exact spell randomly.
 				
@@ -43,15 +34,15 @@ Once per day the owner of the book can cast the spell to which the book is opene
 The owner of the book need not have the book on her person in order to use its power. The book can be stored in a place of safety while the owner is adventuring and still allow its owner to cast spells by means of its power.
 				
 Each time a spell is cast, there is a chance that the energy connected with its use causes the page to magically turn despite all precautions. The chance of a page turning depends on the spell the page contains and what sort of spellcaster the owner is.
-% <thead class="stat-description-char">
 
-\begin{tabular}{ll}
-\textbf{Condition} & \textbf{Chance of Page Turning} \\
+\begin{tabularx}{\linewidth}{Xc}
+                   & \textbf{Chance of Page} \\
+\textbf{Condition} & \textbf{Turning} \\
 Caster employing a spell usable by own class and level & 10\% \\
 Caster employing a spell not usable by own class and level & 20\% \\
 Nonspellcaster employing divine spell & 25\% \\
 Nonspellcaster employing arcane spell & 30\% \\
-\end{tabular}
+\end{tabularx}
 
 				
 Treat each spell use as if a scroll were being employed, for purposes of determining casting time, spell failure, and so on. 
@@ -74,13 +65,15 @@ The character with a \textit{deck of many things }who wishes to draw a card must
 				
 Each time a card is taken from the deck, it is replaced (making it possible to draw the same card twice) unless the draw is the Jester or the Fool, in which case the card is discarded from the pack. A \textit{deck of many things }contains 22 cards. To simulate the magic cards, you may want to use tarot cards, as indicated in the second column of the accompanying table. If no tarot deck is available, substitute ordinary playing cards instead, as indicated in the third column. The effects of each card, summarized on the table, are fully described below.
 				
-\begin{table}[]
+\begin{figure*}[]
+ \sffamily
+ \caption{Deck of Many Things}
 \begin{tabular}{llll}
 \textbf{Plaque} & \textbf{Tarot Card} & \textbf{Playing Card}     & \textbf{Summary of Effect}                                 \\
 Balance         & XI. Justice         & Two of spades             & Change alignment instantly.                                \\
 Comet           & Two of swords       & Two of diamonds           & Defeat the next monster you meet to gain one level.        \\
 Donjon          & Four of swords      & Ace of spades             & You are imprisoned.                                        \\
-Euryale         & Ten of swords       & Queen of spades           & –1 penalty on all saving throws henceforth.                \\
+Euryale         & Ten of swords       & Queen of spades           & --1 penalty on all saving throws henceforth.                \\
 The Fates       & Three of cups       & Ace of hearts             & Avoid any situation you choose, once.                      \\
 Flames          & XV. The Devil       & Queen of clubs            & Enmity between you and an outsider.                        \\
 Fool            & 0. The Fool         & Joker (with trademark)    & Lose 10,000 experience points and you must draw again.     \\
@@ -100,7 +93,7 @@ Throne          & Four of wands       & King of hearts            & Gain a +6 bo
 Vizier          & IX. The Hermit      & Ace of diamonds           & Know the answer to your next dilemma.                      \\
 The Void        & Eight of swords     & King of clubs             & Body functions, but soul is trapped elsewhere.            
 \end{tabular}
-\end{table}
+\end{figure*}
 
 \textit{Balance}: The character must change to a radically different alignment. If the character fails to act according to the new alignment, she gains a negative level.
 				
@@ -310,13 +303,13 @@ Description
 The \textit{Codex} is enormous---supposedly, it requires two strong men to lift it. No matter how many pages are turned, another always remains. Anyone opening the \textit{Codex }for the first time is utterly annihilated, as with a \textit{destruction }spell (Fortitude DC 30). Those who survive can peruse its pages and learn its powers, though not without risk. Each day spent studying the \textit{Codex }allows the reader to make a Spellcraft check (DC 50) to learn one of its powers (choose the power learned randomly; add a +1 circumstance bonus on the check per additional day spent reading until a power is learned). However, each day of study also forces the reader to make a Will save (DC 30 + 1 per day of study) to avoid being driven insane (as the \textit{insanity }spell). The powers of the \textit{Codex of the Infinite Planes }are as follows: \textit{astral projection, banishment, elemental swarm, gate, greater planar ally, greater planar binding, plane shift, }and \textit{soul bind. }Each of these spell-like abilities are usable at will by the owner of the \textit{Codex }(assuming that he or she has learned how to access the power). The \textit{Codex of the Infinite Planes }has a caster level of 30th for the purposes of all powers and catastrophes, and all saving throw DCs are 20 + spell level. Activating any power requires a Spellcraft check (DC 40 + twice the spell level of the power; the character can't take 10 on this check). Any failure on either check indicates that a catastrophe befalls the user (roll on the table below for the effect). A character can only incur one catastrophe per power use. 
 % <thead href="../skills/spellcraft.html#spellcraft">
 
-\begin{tabular}{ll}
+\begin{tabularx}{\linewidth}{lX}
 \textbf{d\%} & \textbf{Catastrophe}                                                                                                                                                                               \\
-01–25        & \textbf{Natural Fury}: An \textit{earthquake }spell centered on the reader strikes every round for 1 minute, and an intensified \textit{storm of vengeance }spell is centered and targeted on the reader. \\
-26–50        & \textbf{Fiendish Vengeance}: A \textit{gate }opens and 1d3+1 balors, pit fiends, or similar evil outsiders step through and attempt to destroy the owner of the \textit{Codex. }\\
-51–75        & \textbf{Ultimate Imprisonment}: Reader's soul is captured (as \textit{trap the soul; }no save allowed) in a random gem somewhere on the plane while his or her body is entombed beneath the earth (as \textit{imprisonment}). \\
-76–100       & \textbf{Death}: The reader utters a \textit{wail of the banshee }and then is subject to a \textit{destruction }spell. This repeats every round for 10 rounds until the reader is dead.\\
-\end{tabular}
+01--25        & \textbf{Natural Fury}: An \textit{earthquake }spell centered on the reader strikes every round for 1 minute, and an intensified \textit{storm of vengeance }spell is centered and targeted on the reader. \\
+26--50        & \textbf{Fiendish Vengeance}: A \textit{gate }opens and 1d3+1 balors, pit fiends, or similar evil outsiders step through and attempt to destroy the owner of the \textit{Codex. }\\
+51--75        & \textbf{Ultimate Imprisonment}: Reader's soul is captured (as \textit{trap the soul; }no save allowed) in a random gem somewhere on the plane while his or her body is entombed beneath the earth (as \textit{imprisonment}). \\
+76--100       & \textbf{Death}: The reader utters a \textit{wail of the banshee }and then is subject to a \textit{destruction }spell. This repeats every round for 10 rounds until the reader is dead.\\
+\end{tabularx}
 				
 The \textit{Codex of the Infinite Planes }is destroyed if one page is torn out and left on each plane in existence. Note that tearing out a page immediately triggers a catastrophe.
 				

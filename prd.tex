@@ -1,8 +1,8 @@
-\documentclass[10pt,twoside,onecolumn,openany,final]{memoir}
+\documentclass[9.5pt,twoside,twocolumn,openany,final]{memoir}
 \setstocksize{10.75in}{8.25in}
 
 \usepackage[toc,lot,lof]{multitoc}
-\usepackage[top=.75in, bottom=.75in, left=.75in, right=.75in]{geometry}
+\usepackage[top=.75in, bottom=.75in, left=.55in, right=.55in]{geometry}
 \usepackage{graphicx} \graphicspath{{./images/}}
 \usepackage{longtable}
 \usepackage{mdwlist}
@@ -27,12 +27,15 @@
 \definecolor{offyellow}{RGB}{255,255,128}
 \definecolor{links}{RGB}{200,0,50}
 \usepackage{multirow}
-\usepackage{tabularx}
-
+\usepackage{tabulary}
+\usepackage{xtab,booktabs}
+\usepackage{array,booktabs,longtable,tabularx}
+\usepackage{caption}
 %% Font
 \usepackage[T1]{fontenc}
 \usepackage[bitstream-charter]{mathdesign}
 \usepackage{aurical}
+% \usepackage{supertabular}
 
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=links,pdfstartview={XYZ null null 1.00},bookmarksdepth=2]{hyperref}
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,6 +205,9 @@
 
 \clearpage
 %\begin{multicols}{2}
+
+\input{todo}
+
 
 \input{chapter-headings/pf01-gettingstarted}
 \input{chapter-headings/pf02-races}

@@ -42,21 +42,17 @@ the two alignments, as shown on the following diagram. Note that diagonal \textt
 count as two steps. For example, a lawful neutral character is one step away from a lawful good alignment, 
 and three steps away from a chaotic evil alignment. A cleric's alignment must be within one step of the 
 alignment of her deity. 
-							\textbf{Lawful}
-							\textbf{Neutral}
-							\textbf{Chaotic}
-																			\textbf{Good}
-							Lawful Good
-							Neutral Good
-							Chaotic Good
-																			\textbf{Neutral}
-							Lawful Neutral
-							Neutral
-							Chaotic Neutral
-																			\textbf{Evil}
-							Lawful Evil
-							Neutral Evil
-							Chaotic Evil
+
+\begin{tabular}{l|l|l|l}
+ & \textbf{Lawful} & \textbf{Neutral} & \textbf{Chaotic}\\
+ \hline
+\textbf{Good} & Lawful Good & Neutral Good & Chaotic Good \\
+\hline
+\textbf{Neutral} & Lawful Neutral & Neutral & Chaotic Neutral \\
+\hline
+\textbf{Evil} & Lawful Evil & Neutral Evil & Chaotic Evil \\
+\hline
+\end{tabular}
 														
 \subsection{The Nine Alignments}
 
@@ -129,16 +125,17 @@ The following section determines a character's starting age, height, and weight.
 
 				
 You can choose or randomly generate your character's age. If you choose it, it must be at least the minimum age for the character's race and class. Alternatively, roll the dice indicated for your class on Table: Random Starting Ages and add the result to the minimum age of adulthood for your race to determine how old your character is.
-				
-% <div class="table">
 
 \begin{table}[htb]
 \sffamily
 \rowcolors{1}{white}{offyellow}
 \caption{Random Starting Ages}
 \centering
-\begin{tabular}{l c p{2.5cm} p{2.5cm} p{2.2cm}}
-\textbf{Race}  &  \textbf{Adulthood}  &  \textbf{Barbarian, Rogue, Sorcerer}  &  \textbf{Bard, Fighter, Paladin, Ranger}  &  {\raggedright{}\textbf{Cleric, Druid, Monk, Wizard}}\\
+\begin{tabular}{lclll}
+               &                      &                      &  \textbf{Bard,}    &  \textbf{Cleric,}\\
+               &                      &  \textbf{Barbarian,} &  \textbf{Fighter,} &  \textbf{Druid,}\\
+               &                      &  \textbf{Rogue,}     &  \textbf{Paladin,} &  \textbf{Monk,} \\
+\textbf{Race}  &  \textbf{Adulthood}  &  \textbf{Sorcerer}   &  \textbf{Ranger}   &  \textbf{Wizard}\\
 Human & 15 years & +1d4 & +1d6 & +2d6\\
 Dwarf & 40 years & +3d6 & +5d6 & +7d6\\
 Elf & 110 years & +4d6 & +6d6 & +10d6\\
@@ -159,9 +156,9 @@ The maximum ages are for player characters. Most people in the world at large di
 \begin{table}[htb]
 \sffamily
 \rowcolors{1}{white}{offyellow}
+\setlength{\tabcolsep}{1pt}
 \caption{Aging Effects}
-\centering
-\begin{tabular}{l c c c c}
+\begin{tabular}{lllll}
 \textbf{Race} & \textbf{Middle Age\textsuperscript{1}} & \textbf{Old\textsuperscript{2}} & \textbf{Venerable\textsuperscript{3}} & \textbf{Maximum Age}\\
 Human & 35 years & 53 years & 70 years & +2d20 years\\
 Dwarf & 125 years & 188 years & 250 years & +2d100 years\\
@@ -170,15 +167,12 @@ Gnome & 100 years & 150 years & 200 years & +3d100 years\\
 Half-elf & 62 years & 93 years & 125 years & +3d20 years\\
 Half-orc & 30 years & 45 years & 60 years & +2d10 years\\
 Halfling & 50 years & 75 years & 100 years & +5d20 years\\
-\multicolumn{5}{l}{\textsuperscript{1} At middle age, -1 to Str, Dex, and Con; +1 to Int, Wis, and Cha.}\\
-\multicolumn{5}{l}{\textsuperscript{2} At old age, -2 to Str, Dex, and Con; +1 to Int, Wis, and Cha.}\\
-\multicolumn{5}{l}{\textsuperscript{3} At venerable age, -3 to Str, Dex, and Con; +1 to Int, Wis, and Cha.}\\
 \end{tabular}
+\textsuperscript{1} At middle age, -1 to Str, Dex, and Con; +1 to Int, Wis, and Cha.\\
+\textsuperscript{2} At old age, -2 to Str, Dex, and Con; +1 to Int, Wis, and Cha.\\
+\textsuperscript{3} At venerable age, -3 to Str, Dex, and Con; +1 to Int, Wis, and Cha.\\
 \end{table}
 
-% </div colspan="5">
-
-				
 \subsection{Height and Weight}
 
 				
@@ -187,10 +181,11 @@ To determine a character's height, roll the modifier dice indicated on Table: Ra
 \begin{table}[htb]
 \sffamily
 \rowcolors{1}{white}{offyellow}
+\setlength{\tabcolsep}{1pt}
 \caption{Random Height and Weight}
-\centering
-\begin{tabular}{l c c c c}
-\textbf{Race} & \textbf{Base Height} & \textbf{Height Modifier} & \textbf{Base Weight} & \textbf{Weight Modifier}\\
+\begin{tabular}{lllll}
+              & \textbf{Base}   & \textbf{Height}   & \textbf{Base}   & \textbf{Weight}\\
+\textbf{Race} & \textbf{Height} & \textbf{Modifier} & \textbf{Weight} & \textbf{Modifier}\\
 Human, male & 4' 10" & +2d10 & 120 lb. & x (2d4) lb.\\
 Human, female & 4' 5" & +2d10 & 85 lb. & x (2d4) lb.\\
 Dwarf, male & 3' 9" & +2d4 & 130 lb. & x (2d6) lb.\\
@@ -258,14 +253,10 @@ If your character is weak or carrying a lot of gear, however, then you'll need t
 \end{tabular}
 \end{table}
 
-
-% </div id="table-7-4-carrying-capacity">
-
-
 Encumbrance by Weight: If you want to determine whether your character's gear is heavy enough to slow him down more than his armor already does, total the weight of all the character's items, including armor, weapons, and gear. Compare this total to the character's Strength on Table: Carrying Capacity. Depending on the character's carrying capacity, he or she may be carrying a light, medium, or heavy load. Like armor, a character's load affects his maximum Dexterity bonus to AC, carries a check penalty (which works like an armor check penalty), reduces the character's speed, and affects how fast the character can run, as shown on Table: Encumbrance Effects. A medium or heavy load counts as medium or heavy armor for the purpose of abilities or skills that are restricted by armor. Carrying a light load does not encumber a character.
 				
 If your character is wearing armor, use the worse figure (from armor or from load) for each category. Do not stack the penalties.
-% <div class="right">
+
 
 
 \begin{table}[htb]
@@ -274,6 +265,7 @@ If your character is wearing armor, use the worse figure (from armor or from loa
 \caption{Encumbrance Effects}
 \centering
 \begin{tabular}{l c c c c c}
+              &                  &                        & \multicolumn{2}{c}{\textbf{Speed}}\\
 \textbf{Load} & \textbf{Max Dex} & \textbf{Check Penalty} & \textbf{30ft} & \textbf{20ft} & \textbf{Run}\\
 Medium & +3 & -3 & 20ft & 15ft & x4\\
 Heavy & +1 & -6 & 20ft & 15ft & x3\\
@@ -293,25 +285,25 @@ Quadrupeds can carry heavier loads than bipeds can. Multiply the values correspo
 				
 Tremendous Strength: For Strength scores not shown on Table: Carrying Capacity, find the Strength score between 20 and 29 that has the same number in the \texttt{{}"{}}ones\texttt{{}"{}} digit as the creature's Strength score does and multiply the numbers in that row by 4 for every 10 points the creature's Strength is above the score for that row.
 				
+
+
 \subsection{Armor and Encumbrance for Other Base Speeds}
 
-				
 The table below provides reduced speed figures for all base speeds from 5 feet to 120 feet (in 5-foot increments).
 
-\begin{table}[htb]
-\sffamily
-\rowcolors{1}{white}{offyellow}
-\caption{Reduced Rates For Other Speeds}
-\centering
-\begin{tabular}{c c c c}
-\textbf{Base Speed} & \textbf{Reduced Speed} & \textbf{Base Speed} & \textbf{Reduced Speed}\\
-20ft & 15ft & 70ft & 50ft\\
-30ft & 20ft & 80ft & 55ft\\
-40ft & 30ft & 90ft & 60ft\\
-50ft & 35ft & 100ft & 70ft\\
-60ft & 40ft & & \\
+\begin{tabular}{cc|cc}
+\textbf{Base} & \textbf{Reduced} & \textbf{Base} & \textbf{Reduced} \\
+\textbf{Speed} & \textbf{Speed} & \textbf{Speed} & \textbf{Speed}\\
+5ft       & 5ft  & 65ft & 45ft\\
+10ft-15ft & 10ft & 70ft-75ft & 50ft\\
+20ft      & 15ft & 80ft & 55ft\\
+25ft-30ft & 20ft & 85ft-90ft & 60ft\\
+35ft      & 25ft & 95ft & 65ft\\
+40ft-45ft & 30ft & 100ft-105ft & 70ft\\
+50ft      & 35ft & 110ft & 75ft\\
+55ft-60ft & 40ft & 115ft-120ft & 80ft\\
 \end{tabular}
-\end{table}
+
 				
 \section{Movement}
 
@@ -455,38 +447,38 @@ Waterborne Movement: See Table: Mounts and Vehicles: Mounts and Vehicles for spe
 \begin{table}[htb]
 \sffamily
 \rowcolors{1}{white}{offyellow}
+\setlength{\tabcolsep}{1pt}
 \caption{Mounts and Vehicles}
-\centering
-\begin{tabular}{l l l}
+\begin{tabular}{lll}
 \textbf{Mount/Vehicle} & \textbf{Per Hour} & \textbf{Per Day}\\
 Mount (carrying load) & & \\
-\hspace{1cm}Donkey (51-150 lb.)\textsuperscript{1} & 2 miles & 16 miles\\
-\hspace{1cm}Donkey or mule & 3 miles & 24 miles\\
-\hspace{1cm}Heavy horse (201-600 lb.)\textsuperscript{1} & 3.5 miles & 28 miles\\
-\hspace{1cm}Heavy horse or heavy warhorse & 5 miles & 40 miles\\
-\hspace{1cm}Heavy warhorse (301-900 lb.)\textsuperscript{1} & 3.5 miles & 28 miles\\
-\hspace{1cm}Light horse (151-450 lb.)\textsuperscript{1} & 4 miles & 32 miles\\
-\hspace{1cm}Light horse or light warhorse & 6 miles & 48 miles\\
-\hspace{1cm}Light warhorse (231-690 lb.)\textsuperscript{1} & 4 miles & 32 miles\\
-\hspace{1cm}Mule (231-690 lb.)\textsuperscript{1} & 2 miles & 16 miles\\
-\hspace{1cm}Pony (76-225 lb.)\textsuperscript{1} & 3 miles & 24 miles\\
-\hspace{1cm}Pony or warpony & 4 miles & 32 miles\\
-\hspace{1cm}Riding Dog (101-300 lb.)\textsuperscript{1} & 3 miles & 24 miles\\
-\hspace{1cm}Riding Dog & 4 miles & 32 miles\\
-\hspace{1cm}Warpony (101-300 lb.)\textsuperscript{1} & 3 miles & 24 miles\\
+\hspace{1em}Donkey (51-150 lb.)\textsuperscript{1} & 2 miles & 16 miles\\
+\hspace{1em}Donkey or mule & 3 miles & 24 miles\\
+\hspace{1em}Heavy horse (201-600 lb.)\textsuperscript{1} & 3.5 miles & 28 miles\\
+\hspace{1em}Heavy horse or heavy warhorse & 5 miles & 40 miles\\
+\hspace{1em}Heavy warhorse (301-900 lb.)\textsuperscript{1} & 3.5 miles & 28 miles\\
+\hspace{1em}Light horse (151-450 lb.)\textsuperscript{1} & 4 miles & 32 miles\\
+\hspace{1em}Light horse or light warhorse & 6 miles & 48 miles\\
+\hspace{1em}Light warhorse (231-690 lb.)\textsuperscript{1} & 4 miles & 32 miles\\
+\hspace{1em}Mule (231-690 lb.)\textsuperscript{1} & 2 miles & 16 miles\\
+\hspace{1em}Pony (76-225 lb.)\textsuperscript{1} & 3 miles & 24 miles\\
+\hspace{1em}Pony or warpony & 4 miles & 32 miles\\
+\hspace{1em}Riding Dog (101-300 lb.)\textsuperscript{1} & 3 miles & 24 miles\\
+\hspace{1em}Riding Dog & 4 miles & 32 miles\\
+\hspace{1em}Warpony (101-300 lb.)\textsuperscript{1} & 3 miles & 24 miles\\
 Cart or wagon & 2 miles & 16 miles\\
-Ship & & \\
-\hspace{1cm}Galley (rowed and sailed) & 4 miles & 96 miles\\
-\hspace{1cm}Keelboat (rowed)\textsuperscript{2} & 1 mile & 10 miles\\
-\hspace{1cm}Longship (sailed and rowed) & 3 miles & 72 miles\\
-\hspace{1cm}Raft or barge (poled or towed)\textsuperscript{2} & 1/2 mile & 5 miles\\
-\hspace{1cm}Rowboat (rowed)\textsuperscript{2} & 1.5 miles & 15 miles\\
-\hspace{1cm}Sailing ship (sailed) & 2 miles & 48 miles\\
-\hspace{1cm}Warship (sailed and rowed) & 2.5 miles & 60 miles\\
-\multicolumn{3}{p{9.5cm}}{\textsuperscript{1} Quadrupeds, such as horses, can carry heavier loads than characters can. See Carrying Capacity, above, for more information.}\\
-\multicolumn{3}{p{9.5cm}}{\textsuperscript{2} Rafts, barges, keelboats, and rowboats are used on lakes and rivers.
-If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. In addition to 10 hours of being rowed, the vehicle can also float an additional 14 hours, if someone can guide it, so add an additional 42 miles to the daily distance traveled. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores.}\\
+\textit{Ship} & & \\
+\hspace{1em}Galley (rowed and sailed) & 4 miles & 96 miles\\
+\hspace{1em}Keelboat (rowed)\textsuperscript{2} & 1 mile & 10 miles\\
+\hspace{1em}Longship (sailed and rowed) & 3 miles & 72 miles\\
+\hspace{1em}Raft or barge (poled or towed)\textsuperscript{2} & 1/2 mile & 5 miles\\
+\hspace{1em}Rowboat (rowed)\textsuperscript{2} & 1.5 miles & 15 miles\\
+\hspace{1em}Sailing ship (sailed) & 2 miles & 48 miles\\
+\hspace{1em}Warship (sailed and rowed) & 2.5 miles & 60 miles\\
 \end{tabular}
+\textsuperscript{1} Quadrupeds, such as horses, can carry heavier loads than characters can. See Carrying Capacity, above, for more information.\\
+\textsuperscript{2} Rafts, barges, keelboats, and rowboats are used on lakes and rivers.
+If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. In addition to 10 hours of being rowed, the vehicle can also float an additional 14 hours, if someone can guide it, so add an additional 42 miles to the daily distance traveled. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores.\\
 \end{table}
 									
 \subsection{Evasion and Pursuit}
@@ -512,13 +504,13 @@ Dwarves and half-orcs have darkvision, but the other races presented in Races ne
 \sffamily
 \rowcolors{1}{white}{offyellow}
 \caption{Light Sources and Illumination}
-\centering
-\begin{tabular}{l c c c}
+\begin{tabular}{lccc}
 \textbf{Object} & \textbf{Bright} & \textbf{Shadowy} & \textbf{Duration}\\
 Candle & n/a\textsuperscript{1} & 5 ft. & 1 hr.\\
 Common Lamp & 15 ft. & 30 ft. & 6 hr./pint\\
 Everburning torch & 20 ft. & 40 ft. & Permanent\\
-Lantern (bullseye)\textsuperscript{2} & 60-ft. cone & 120-ft. cone & 6 hr./pint\\
+Lantern (bullseye)\textsuperscript{2} & 60-ft. & 120-ft. & 6 hr./pint\\
+                                      & cone  & cone & \\
 Lantern (hooded) & 30 ft. & 60 ft. & 6 hr./pint\\
 Sunrod & 30 ft. & 60 ft. & 6 hr.\\
 Torch & 20 ft. & 40 ft. & 1 hr.\\
@@ -527,9 +519,9 @@ Continual flame & 20 ft. & 40 ft. & Permanent\\
 Dancing lights (torches) & 20 ft. (each) & 40 ft. (each) & 1 min.\\
 Daylight & 60 ft. & 120 ft. & 30 min.\\
 Light & 20 ft. & 40 ft. & 10 min.\\
-\multicolumn{4}{l}{\textsuperscript{1} A candle does not provide bright illumination, only shadowy illumination.}\\
-\multicolumn{4}{l}{\textsuperscript{2} A bullseye lantern illuminates a cone, not a radius.}\\
-\end{tabular}
+\end{tabular}\\
+\textsuperscript{1} A candle does not provide bright illumination, only shadowy illumination.\\
+\textsuperscript{2} A bullseye lantern illuminates a cone, not a radius.\\
 \end{table}
 
 % </div colspan="4">
@@ -576,7 +568,7 @@ Fine & +8\\
 \sffamily
 \caption{Table: Substance Hardness and Hit Points}
 \begin{tabular}{lll}
-Substance & Hardness & Hit Points\\
+\textbf{Substance} & \textbf{Hardness} & \textbf{Hit Points}\\
 Glass & 1 & 1/in. of thickness\\
 Paper or cloth & 0 & 2/in. of thickness\\
 Rope & 0 & 2/in. of thickness\\
@@ -589,7 +581,7 @@ Mithral & 15 & 30/in. of thickness\\
 Adamantine & 20 & 40/in. of thickness\\
 \end{tabular}
 \end{table}
-% <
+
 \begin{table}[]
 \sffamily
 \caption{Table: DCs to Break or Burst Items}
@@ -603,11 +595,11 @@ Bend iron bars & 24\\
 Break down barred door & 25\\
 Burst chain bonds & 26\\
 Break down iron door & 28\\
-Condition & DC Adjustment*\\
-Hold portal & +5\\
-Arcane lock & +10\\
-\multicolumn{2}{c}{* If both apply, use the larger number.}\\
-\end{tabular}
+\textbf{Condition} & \textbf{DC Adjustment*}\\
+\textit{Hold portal} & +5\\
+\textit{Arcane lock} & +10\\
+\end{tabular}\\
+* If both apply, use the larger number.
 \end{table}
 		
 \subsection{Smashing an Object}
@@ -657,6 +649,7 @@ Larger and smaller creatures get size bonuses and size penalties on Strength che
 A crowbar or portable ram improves a character's chance of breaking open a door (see Equipment).
 
 \begin{table}[]
+\sffamily
 \caption{Table: Common Armor, Weapon, and Shield Hardness and Hit Points}
 \begin{tabular}{lll}
 \textbf{Weapon or Shield} & \textbf{Hardness} & \textbf{Hit Points}\\
@@ -669,18 +662,17 @@ Light blade & 10 & 2 \\
  One-handed hafted weapon & 5 & 5 \\
  Two-handed hafted weapon & 5 & 10 \\
  Projectile weapon & 5 & 5 \\
- Armor & special & armor bonus × 5 \\
+ Armor & special & armor bonus $\times$ 5 \\
  Buckler & 10 & 5 \\
  Light wooden shield & 5 & 7 \\
  Heavy wooden shield & 5 & 15 \\
  Light steel shield & 10 & 10 \\
  Heavy steel shield & 10 & 20 \\
  Tower shield & 5 & 20\\
-\end{tabular}
-\(^{1}\) Add +2 for each +1 enhancement bonus of magic items.
-\(^{2}\) The hp value given is for Medium armor, weapons, and shields. Divide by 2 for each size category of the item smaller than Medium, or multiply it by 2 for each size category larger than Medium.
-\(^{3}\) Add 10 hp for each +1 enhancement bonus of magic items.
-\(^{4}\) Varies by material; see Table: Substance Hardness and Hit Points.
-					
+\end{tabular}\\
+\(^{1}\) Add +2 for each +1 enhancement bonus of magic items.\\
+\(^{2}\) The hp value given is for Medium armor, weapons, and shields. Divide by 2 for each size category of the item smaller than Medium, or multiply it by 2 for each size category larger than Medium.\\
+\(^{3}\) Add 10 hp for each +1 enhancement bonus of magic items.\\
+\(^{4}\) Varies by material; see Table: Substance Hardness and Hit Points.\\					
 \end{table}
         	

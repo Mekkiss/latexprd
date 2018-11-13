@@ -37,11 +37,11 @@ The following rules cover the basics of terrain that can be found in a dungeon.
 				
 Masonry walls---stones piled on top of each other, usually but not always held in place with mortar---often divide dungeons into corridors and chambers. Dungeon walls can also be hewn from solid rock, leaving them with a rough, chiseled look. Still other dungeon walls can be the smooth, unblemished stone of a naturally occurring cave. Dungeon walls are difficult to break down or through, but they're generally easy to climb.
 
-\begin{table}[]
+\begin{table*}[]
 \sffamily
 \caption{Table: Walls}
-\begin{tabular}{llllll}
-\textbf{Wall Type} & \textbf{Typical Thickness\(^{1}\)} & \textbf{break DC} & \textbf{Hardness} & \textbf{Hit Points} & \textbf{Climb DC}\\
+\begin{tabularx}{\linewidth}{Xlllll}
+\textbf{Wall Type} & \textbf{Typical Thickness\(^{1}\)} & \textbf{Break DC} & \textbf{Hardness} & \textbf{Hit Points} & \textbf{Climb DC}\\
 Masonry & 1 ft. & 35 & 8 & 90 hp & 20\\
 Superior masonry & 1 ft. & 35 & 8 & 90 hp & 25\\
 Reinforced masonry & 1 ft. & 45 & 8 & 180 hp & 20\\
@@ -51,11 +51,11 @@ Iron & 3 in. & 30 & 10 & 90 hp & 25\\
 Paper & Paper-thin & 1 & - & 1 hp & 30\\
 Wooden & 6 in. & 20 & 5 & 60 hp & 21\\
 Magically treated\(^{2}\) & - & +20 & \mbox{$\times$}2 & \mbox{$\times$}2 & -\\
-\end{tabular}
-1 Per 10-foot-by-10-foot section.
-2 This modifier can be applied to any of the other wall types.
-3 Or an additional 50 hit points, whichever is greater.
-\end{table}
+\end{tabularx}
+\textsuperscript{1} Per 10-foot-by-10-foot section.\\
+\textsuperscript{2} This modifier can be applied to any of the other wall types.\\
+\textsuperscript{3} Or an additional 50 hit points, whichever is greater.\\
+\end{table*}
 
 				
 \textbf{Masonry Walls}: The most common kind of dungeon wall, masonry walls are usually at least 1 foot thick. Often, these ancient walls sport cracks and crevices, and sometimes dangerous slimes or small monsters live in these areas and wait for prey. Masonry walls stop all but the loudest noises. It takes a DC 20 Climb check to travel along a masonry wall.
@@ -115,12 +115,12 @@ Ledges can also have low walls 2 to 3 feet high along their edges. Such walls pr
 
 				
 Doors in dungeons are much more than mere entrances and exits. Often they can be encounters all by themselves. Dungeon doors come in three basic types: wooden, stone, and iron.
-\begin{table}[]
+\begin{table*}[]
 \sffamily
 \caption{Table: Doors}
 \begin{tabular}{llllll}
-                   &                            &                   &                     & \multicolumn{2}{c}{\textbf{break DC}}\\
-\textbf{Door Type} & \textbf{Typical Thickness} & \textbf{Hardness} & \textbf{Hit Points} & Stuck & Locked\\
+                   &                            &                   &                     & \multicolumn{2}{c}{\textbf{Break DC}}\\
+\textbf{Door Type} & \textbf{Typical Thickness} & \textbf{Hardness} & \textbf{Hit Points} & \textbf{Stuck} & \textbf{Locked}\\
 
 Simple wooden & 1 in. & 5 & 10 hp & 13 & 15 \\
  Good wooden & 1-1/2 in. & 5 & 15 hp & 16 & 18 \\
@@ -131,9 +131,9 @@ Simple wooden & 1 in. & 5 & 10 hp & 13 & 15 \\
  Portcullis, iron & 2 in. & 10 & 60 hp & 25* & 25* \\
  Lock & - & 15 & 30 hp & - & - \\
  Hinge & - & 10 & 30 hp & - & -\\
-\end{tabular}
+\end{tabular} \\
 * DC to lift. Use appropriate door figure for breaking.\\
-\end{table}
+\end{table*}
 				
 \textbf{Wooden Doors}: Constructed of thick planks nailed together, sometimes bound with iron for strength (and to reduce swelling from dungeon dampness), wooden doors are the most common type. Wooden doors come in varying strengths: simple, good, and strong. Simple doors (break DC 15) are not meant to keep out motivated attackers. Good doors (break DC 18), while sturdy and long-lasting, are still not meant to take much punishment. Strong doors (break DC 25) are bound in iron and are a sturdy barrier to those attempting to get past them. Iron hinges fasten the door to its frame, and typically a circular pull-ring in the center is there to help open it. Sometimes, instead of a pull-ring, a door has an iron pull-bar on one or both sides of the door to serve as a handle. In inhabited dungeons, these doors are usually well-maintained (not stuck) and unlocked, although important areas are locked up if possible.
 				
@@ -282,14 +282,14 @@ Some magic device traps have special proximity triggers that activate only when 
 				
 \textbf{Visual}: This trigger for magic traps works like an actual eye, springing the trap whenever it \texttt{{}"{}}sees\texttt{{}"{}} something. A trap with a visual trigger requires the casting of \textit{arcane eye, clairvoyance, }or \textit{true seeing }during its construction. Sight range and the Perception bonus conferred on the trap depend on the spell chosen, as shown.
 
-SpellSight RangePerception Bonus
+\begin{tabular}{lll}
+               &                      & \textbf{Perception} \\
+\textbf{Spell} & \textbf{Sight Range} & \textbf{Bonus} \\
+\textit{arcane eye} & Line of sight (unlimited range) & +20\\
+\textit{clairvoyance} & One preselected location & +15\\
+\textit{true seeing} & Line of sight (up to 120 ft.) & +30\\
+\end{tabular}
 
-\textit{arcane eye}Line of sight (unlimited range)+20
-\textit{clairvoyance}One preselected location+15
-\textit{true seeing}Line of sight (up to 120 ft.)+30
-% </tbody id="trigger">
-
-				
 If you want the trap to see in the dark, you must either choose the \textit{true seeing }option or add \textit{darkvision }to the trap as well. (\textit{Darkvision }limits the trap's sight range in the dark to 60 feet.) If invisibility, disguises, or illusions can fool the spell being used, they can fool the visual trigger as well. 
 				
 \textbf{Touch}: A touch trigger, which springs the trap when touched, is one of the simplest kinds of trigger to construct. This trigger may be physically attached to the part of the mechanism that deals the damage or it may not. You can make a magic touch trigger by adding \textit{alarm }to the trap and reducing the area of the effect to cover only the trigger spot.
@@ -401,7 +401,7 @@ Designing new traps is a simple process. Start by deciding what type of trap you
 \sffamily
 \caption{Table: CR Modifiers for Mechanical Traps}
 \begin{tabular}{ll}
-Feature & CR Modifier\\
+\textbf{Feature} & \textbf{CR Modifier}\\
 \multicolumn{2}{l}{\textit{Perception DC}}\\
 15 or lower & -1\\
 16-20 & -\\
@@ -433,31 +433,26 @@ Average damage & +1 per 10 points of average damage\\
 \textbf{Alchemical device} & \textbf{Level of spell mimicked}\\
 Automatic reset & +1\\
 Liquid & +5\\
-Multiple targets (non-damage) & +1\\
+Multiple targets & +1\\
+ (non-damage) &  \\
 Never miss & +2\\
 Proximity or visual trigger & +1\\
-\multicolumn{2}{l}{\textit{Poison}}\\
-Black adder venom & +1\\
-Black lotus extract & +8\\
-Bloodroot & +1\\
-Blue whinnis & +1\\
-Burnt othur fumes & +6\\
-Deathblade & +5\\
-Dragon bile & +6\\
-Giant wasp poison & +3\\
-Greenblood oil & +1\\
-Insanity mist & +4\\
-Large scorpion venom & +3 \\
-Malyass root paste & +3\\
-Medium spider venom & +2\\
-Nitharit & +4\\
-Purple worm poison & +4\\
-Sassone leaf residue & +3\\
-Shadow essence & +3\\
-Small centipede poison & +1\\
-Terinav root & +5\\
-Ungol dust & +3\\
-Wyvern poison & +5\\
+\end{tabular}
+\setlength{\tabcolsep}{1pt}
+\begin{tabular}{ll|ll}
+                & \textbf{CR of}  &                 & \textbf{CR of} \\
+\textbf{Poison} & \textbf{poison} & \textbf{Poison} & \textbf{poison} \\
+Black adder venom & +1 & Malyass root paste & +3\\
+Black lotus extract & +8 & Medium spider venom & +2\\
+Bloodroot & +1 & Nitharit & +4\\
+Blue whinnis & +1 & Purple worm poison & +4\\
+Burnt othur fumes & +6 & Sassone leaf residue & +3\\
+Deathblade & +5 & Shadow essence & +3\\
+Dragon bile & +6 & Small centipede poison & +1\\
+Giant wasp poison & +3 & Terinav root & +5\\
+Greenblood oil & +1 & Ungol dust & +3\\
+Insanity mist & +4 & Wyvern poison & +5\\
+Large scorpion venom & +3  &  \\
 \end{tabular}
 \end{table}
 
@@ -467,7 +462,8 @@ Wyvern poison & +5\\
 \begin{tabular}{ll}
 \textbf{Feature} & \textbf{CR Modifier}\\
 Highest-level spell effect & + Spell level \\
-Damaging spell effect & +1 per 10 points of average damage\\
+Damaging spell effect & +1 per 10 points of\\
+                      & average damage\\
 \end{tabular}
 \end{table}
 
@@ -476,13 +472,13 @@ Damaging spell effect & +1 per 10 points of average damage\\
 \caption{Table: Cost Modifiers for Magic Device Traps}
 \begin{tabular}{ll}
 \textbf{Feature} & \textbf{Cost Modifier}\\
-Alarm & -\\
+\textit{Alarm} spell used in trigger & ---\\
 One-Shot Trap \\
-Each spell used & +50 gp $\times$ caster level $\times$ spell level\\
-Material components & +Material component costs\\
+\hspace{1em} Each spell used & +50 gp $\times$ caster level $\times$ spell level\\
+\hspace{1em} Material components & +Material component costs\\
 Automatic Reset Trap \\
-Each spell used & +500 gp $\times$ caster level $\times$ spell level\\
-Material components & +Material component costs $\times$ 100\\
+\hspace{1em} Each spell used & +500 gp $\times$ caster level $\times$ spell level\\
+\hspace{1em} Material components & +Material component costs $\times$ 100\\
 \end{tabular}
 \end{table}
 
@@ -887,7 +883,7 @@ It's hard to find cover or concealment to hide underwater (except along the sea 
 				
 Land-based creatures can have considerable difficulty when fighting in water. Water affects a creature's attack rolls, damage, and movement. In some cases a creature's opponents might get a bonus on attacks. The effects are summarized on Table: Combat Adjustments Underwater. They apply whenever a character is swimming, walking in chest-deep water, or walking along the bottom of a body of water. 
 				
-\begin{table}[]
+\begin{table*}[]
 \sffamily
 \caption{Combat Adjustments Underwater}
 \begin{tabular}{lllll}
@@ -898,12 +894,12 @@ Has a swim speed & -2/half & normal & normal & No\\
 Successful Swim check& -2/half\(^{2}\) & normal & quarter or half\(^{3 }\) & No\\
 Firm footing\(^{4 }\) & -2/half\(^{2}\) & normal & half & No\\
 None of the above & -2/half\(^{2}\) &  -2/half & normal & Yes\\
-\end{tabular}
-1 Creatures flailing about in the water (usually because they failed their Swim checks) have a hard time fighting effectively. An off-balance creature loses its Dexterity bonus to Armor Class, and opponents gain a +2 bonus on attacks against it. 
-2 A creature without \textit{freedom of movement }effects or a swim speed makes grapple checks underwater at a --2 penalty, but deals damage normally when grappling.
-3 A successful Swim check lets a creature move one-quarter its speed as a move action or one-half its speed as a full-round action.
-4 Creatures have firm footing when walking along the bottom, braced against a ship's hull, or the like. A creature can only walk along the bottom if it wears or carries enough gear to weigh itself down: at least 16 pounds for Medium creatures, twice that for each size category larger than Medium, and half that for each size category smaller than Medium. 
-\end{table}
+\end{tabular}\\
+\textsuperscript{1} Creatures flailing about in the water (usually because they failed their Swim checks) have a hard time fighting effectively. An off-balance creature loses its Dexterity bonus to Armor Class, and opponents gain a +2 bonus on attacks against it. \\
+\textsuperscript{2} A creature without \textit{freedom of movement }effects or a swim speed makes grapple checks underwater at a --2 penalty, but deals damage normally when grappling.\\
+\textsuperscript{3} A successful Swim check lets a creature move one-quarter its speed as a move action or one-half its speed as a full-round action.\\
+\textsuperscript{4} Creatures have firm footing when walking along the bottom, braced against a ship's hull, or the like. A creature can only walk along the bottom if it wears or carries enough gear to weigh itself down: at least 16 pounds for Medium creatures, twice that for each size category larger than Medium, and half that for each size category smaller than Medium. \\
+\end{table*}
 
 				
 \textbf{Ranged Attacks Underwater}: Thrown weapons are ineffective underwater, even when launched from land. Attacks with other ranged weapons take a --2 penalty on attack rolls for every 5 feet of water they pass through, in addition to the normal penalties for range. 
@@ -977,11 +973,9 @@ A typical city guard force works on three 8-hour shifts, with 30\% of the force 
 The majority of a city guard force is made up of warriors, mostly 1st level. Officers include higher-level warriors, fighters, a fair number of clerics, and wizards or sorcerers, as well as multiclass fighter/spellcasters.
 				
 \subsection{Siege Engines}
-
-				
 Siege engines are large weapons, temporary structures, or pieces of equipment traditionally used in besieging castles or fortresses.
 
-\begin{table}[]
+\begin{table*}[]
 \sffamily
 \caption{Siege Engines}
 \begin{tabular}{llllll}
@@ -991,20 +985,16 @@ Catapult, light & 550 gp & 4d6 & - & 150 ft. (100 ft. minimum) & 2\\
 Ballista & 500 gp & 3d8 & 19-20 & 120 ft. & 1\\
 Ram & 1,000 gp & 3d6* & - & - & 10\\
 Siege tower & 2,000 gp & - & - & - & 20\\
-\end{tabular}
+\end{tabular}\\
 * See description for special rules.\\
-\end{table}
-
-\begin{table}
- \sffamily
- \caption{Catapult Attack Modifiers}
+\textnormal{Catapult Attack Modifiers}\\
  \begin{tabular}{ll}
 No line of sight to target square & --6\\
 Successive shots (crew can see where most recent misses landed) & Cumulative +2 per previous miss (maximum +10)\\
-Successive shots (crew can't see where most recent misses landed, but observer is providing feedback) & Cumulative +1 per previous miss (maximum +5)\\
+Successive shots (crew can't see where most recent misses landed, & \\
+but observer is providing feedback) & Cumulative +1 per previous miss (maximum +5)\\
  \end{tabular}
-
-\end{table}
+\end{table*}
 
 				
 Siege engines are treated as difficult devices if someone tries to disable them using Disable Device. This takes 2d4 rounds and requires a DC 20 Disable Device check. Siege engines are typically made out of wood and have an AC of 3 (--5 Dex, --2 size), a Hardness of 5, and 80 hit points. Siege engines made up of a different material might have different values. Some siege engines are armored as well. Treat the siege engine as a Huge creature to determine the cost of such armor. Siege engines can be crafted as masterwork and enchanted as magic weapons, adding bonuses on attack rolls to the checks made to hit with the siege engine. A masterwork siege engine costs 300 gp more than the listed price. Enchanting a siege engine costs twice the normal amount. For example, a \textit{+1 flaming heavy catapult}, armored with full plate, would have an AC of 11 and would cost 23,100 gp (800 gp base + 6,000 gp for the armor + 300 gp masterwork + 16,000 gp for the enhancements).
@@ -1078,44 +1068,45 @@ Alleys can be dark places even in daylight, thanks to the shadows of the tall bu
 				
 Weather can play an important role in an adventure.
 				
-\begin{table}[]
+\begin{table*}[]
 \sffamily
 \caption{Table: Random Weather}
 \begin{tabular}{lllll}
 \textbf{d\%} & \textbf{Weather} & \textbf{Cold Climate} & \textbf{Temperate Climate\(^{1}\)} & \textbf{Desert}\\
 01-70 & Normal weather & Cold, calm & Normal for season\(^{2}\) & Hot, calm\\
-71-80 & Abnormal weather & Heat wave (01-30) or cold snap (31-100) & Heat wave (01-50) or cold snap (51-100) & Hot, windy\\
+71-80 & Abnormal weather & Heat wave (01-30) & Heat wave (01-50)  & Hot, windy\\
+      &                  & or cold snap (31-100) & or cold snap (51-100) & \\
 81-90 & Inclement weather & Precipitation (snow) & Precipitation (normal for season) & Hot, windy\\
 91-99 & Storm & Snowstorm & Thunderstorm, snowstorm & Duststorm\\
 100 & Powerful storm & Blizzard & Windstorm, blizzard, hurricane, tornado & Downpour\\
-\end{tabular}
-1 Temperate includes forests, hills, marshes, mountains, plains, and warm aquatic environments.
-2 Winter is cold, summer is warm, spring and autumn are temperate. Marsh regions are slightly warmer in winter.
-\end{table}
+\end{tabular}\\
+\textsuperscript{1} Temperate includes forests, hills, marshes, mountains, plains, and warm aquatic environments.\\
+\textsuperscript{2} Winter is cold, summer is warm, spring and autumn are temperate. Marsh regions are slightly warmer in winter.\\
+\end{table*}
 				
 Table: Random Weather can be used as a simple local weather table. Terms on that table are defined as follows.
 				
 \textbf{Calm}: Wind speeds are light (0 to 10 mph).
 				
-\textbf{Cold}: Between 0\^A\mbox{${}^\circ$} and 40\^A\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
+\textbf{Cold}: Between 0\mbox{${}^\circ$} and 40\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
 				
-\textbf{Cold Snap}: Lowers temperature by --10\^A\mbox{${}^\circ$} F.
+\textbf{Cold Snap}: Lowers temperature by --10\mbox{${}^\circ$} F.
 				
 \textbf{Downpour}: Treat as rain (see Precipitation, below), but conceals as fog. Can create floods. A downpour lasts for 2d4 hours.
 				
-\textbf{Heat Wave}: Raises temperature by +10\^A\mbox{${}^\circ$} F.
+\textbf{Heat Wave}: Raises temperature by +10\mbox{${}^\circ$} F.
 				
-\textbf{Hot}: Between 85\^A\mbox{${}^\circ$} and 110\^A\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
+\textbf{Hot}: Between 85\mbox{${}^\circ$} and 110\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
 				
-\textbf{Moderate}: Between 40\^A\mbox{${}^\circ$} and 60\^A\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
+\textbf{Moderate}: Between 40\mbox{${}^\circ$} and 60\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
 				
-\textbf{Powerful Storm (Windstorm/Blizzard/Hurricane/Tornado)}: Wind speeds are over 50 mph (see Table: Wind Effects). In addition, blizzards are accompanied by heavy snow (1d3 feet), and hurricanes are accompanied by downpours. Windstorms last for 1d6 hours. Blizzards last for 1d3 days. Hurricanes can last for up to a week, but their major impact on characters comes in a 24-to-48-hour period when the center of the storm moves through their area. Tornadoes are very short-lived (1d6 \mbox{$\times$} 10 minutes), typically forming as part of a thunderstorm system. 
+\textbf{Powerful Storm (Windstorm / Blizzard / Hurricane / Tornado)}: Wind speeds are over 50 mph (see Table: Wind Effects). In addition, blizzards are accompanied by heavy snow (1d3 feet), and hurricanes are accompanied by downpours. Windstorms last for 1d6 hours. Blizzards last for 1d3 days. Hurricanes can last for up to a week, but their major impact on characters comes in a 24-to-48-hour period when the center of the storm moves through their area. Tornadoes are very short-lived (1d6 \mbox{$\times$} 10 minutes), typically forming as part of a thunderstorm system. 
 				
 \textbf{Precipitation}: Roll d\% to determine whether the precipitation is fog (01--30), rain/snow (31--90), or sleet/hail (91--00). Snow and sleet occur only when the temperature is 30\^A\mbox{${}^\circ$} Fahrenheit or below. Most precipitation lasts for 2d4 hours. By contrast, hail lasts for only 1d20 minutes but usually accompanies 1d4 hours of rain.
 				
 \textbf{Storm (Duststorm/Snowstorm/Thunderstorm)}: Wind speeds are severe (30 to 50 mph) and visibility is cut by three-quarters. Storms last for 2d4--1 hours. See Storms, below, for more details. 
 				
-\textbf{Warm}: Between 60\^A\mbox{${}^\circ$} and 85\^A\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
+\textbf{Warm}: Between 60\mbox{${}^\circ$} and 85\mbox{${}^\circ$} Fahrenheit during the day, 10 to 20 degrees colder at night.
 				
 \textbf{Windy}: Wind speeds are moderate to strong (10 to 30 mph); see Table: Wind Effects.
 				
@@ -1166,13 +1157,14 @@ Whether in the form of a low-lying cloud or a mist rising from the ground, fog o
 
 				
 The wind can create a stinging spray of sand or dust, fan a large fire, keel over a small boat, and blow gases or vapors away. If powerful enough, it can even knock characters down (see Table: Wind Effects), interfere with ranged attacks, or impose penalties on some skill checks.
-% <div class="table">
 
-\begin{table}[]
+
+\begin{table*}[]
 \sffamily
 \caption{Table: Wind Effects}
 \begin{tabular}{llllll}
-\textbf{Wind Force} & \textbf{Wind Speed} & \textbf{Ranged Attacks Normal/Siege Weapons\(^{1}\)} & \textbf{Checked Size\(^{2}\)} & \textbf{Blown Away Size} & \textbf{Fly Penalty}\\
+                    &                     & \textbf{Ranged Attacks} & \textbf{Checked} & \textbf{Blown} & \textbf{Fly}\\
+\textbf{Wind Force} & \textbf{Wind Speed} & \textbf{Normal/Siege Weapons\(^{1}\)} & \textbf{Size\(^{2}\)} & \textbf{Away Size} & \textbf{Penalty}\\
 Light & 0-10 mph & -/- & - & - & - \\
  Moderate & 11-20 mph & -/- & - & - & - \\
  Strong & 21-30 mph & -2/- & Tiny & - & -2 \\
@@ -1180,11 +1172,11 @@ Light & 0-10 mph & -/- & - & - & - \\
  Windstorm & 51-74 mph & Impossible/-4 & Medium & Small & -8 \\
  Hurricane & 75-174 mph & Impossible/-8 & Large & Medium & -12 \\
  Tornado & 175-300 mph & Impossible/impossible & Huge & Large & -16\\
-\end{tabular}
-\textit{1} The siege weapon category includes ballista and catapult attacks as well as boulders tossed by giants.
-\textit{2 Checked Size}: Creatures of this size or smaller are unable to move forward against the force of the wind unless they succeed on a DC 10 Strength check (if on the ground) or a DC 20 Fly skill check if airborne.
-\textit{3 Blown Away Size}: Creatures on the ground are knocked prone and rolled 1d4 \mbox{$\times$} 10 feet, taking 1d4 points of nonlethal damage per 10 feet, unless they make a DC 15 Strength check. Flying creatures are blown back 2d6 \mbox{$\times$} 10 feet and take 2d6 points of nonlethal damage due to battering and buffeting, unless they succeed on a DC 25 Fly skill check.
-\end{table}
+\end{tabular}\\
+\textit{1} The siege weapon category includes ballista and catapult attacks as well as boulders tossed by giants.\\
+\textit{2 Checked Size}: Creatures of this size or smaller are unable to move forward against the force of the wind unless they succeed on a DC 10 Strength check (if on the ground) or a DC 20 Fly skill check if airborne.\\
+\textit{3 Blown Away Size}: Creatures on the ground are knocked prone and rolled 1d4 \mbox{$\times$} 10 feet, taking 1d4 points of nonlethal damage per 10 feet, unless they make a DC 15 Strength check. Flying creatures are blown back 2d6 \mbox{$\times$} 10 feet and take 2d6 points of nonlethal damage due to battering and buffeting, unless they succeed on a DC 25 Fly skill check.\\
+\end{table*}
 				
 \textit{Light Wind}: A gentle breeze, having little or no game effect.
 				
@@ -1268,7 +1260,7 @@ In conditions of severe cold or exposure (below 0\^A\mbox{${}^\circ$} F), an unp
 				
 A character who takes any nonlethal damage from cold or exposure is beset by frostbite or hypothermia (treat her as fatigued). These penalties end when the character recovers the nonlethal damage she took from the cold and exposure.
 				
-Extreme cold (below --20\^A\mbox{${}^\circ$} F) deals 1d6 points of lethal damage per minute (no save). In addition, a character must make a Fortitude save (DC 15, +1 per previous check) or take 1d4 points of nonlethal damage.
+Extreme cold (below --20\mbox{${}^\circ$} F) deals 1d6 points of lethal damage per minute (no save). In addition, a character must make a Fortitude save (DC 15, +1 per previous check) or take 1d4 points of nonlethal damage.
 				
 \subsection{Ice Effects}
 
@@ -1319,10 +1311,6 @@ Characters who deliberately dive into water take no damage on a successful DC 15
 				
 \subsection{Falling Objects}
 
-	
-% <div class="right">
-Table: Damage from Falling Objects
-% <
 \begin{table}[]
 \sffamily
 \caption{Table: Damage from Falling Objects}
