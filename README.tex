@@ -1,0 +1,81 @@
+\chapter*{Preamble}
+\section{Introduction}
+
+In March 2018, Paizo announced a new edition of the Pathfinder RPG with sweeping changes
+to the original rules. In the discussions that arose around this, I 
+\href{https://paizo.com/threads/rzs2v5kr&page=2?Main-Thing-You-Want-From-PF2#82}{made a statement}
+
+\begin{formal}
+ What I want to see from PF2 is a system that \textbf{100\% of current Pathfinder players consider an Improvement} to Pathfinder. \\
+ That is, a system where noone can say "PF1 is better than PF2 in \textit{this} aspect".
+\end{formal}
+
+This had me thinking: How much of Pathfinder could I change while remaining within these constraints? \\
+
+This book - a rewritten PRD - attempts to answer that question.
+
+\section{Design Philosophy and Goals}
+One issue that the Playtest had was the lack of clear direction of design decisions and how they related
+to design goals. It took half a year from the announcement for Paizo to actually publish their design
+goals and even then, they were extremely vague. \\
+
+For this project, I am trying the opposite. \\
+
+\subsection{Every change must not make the system worse for anyone playing the game}
+
+This is the most important goal. I acknowledge that it is a significant constraint, and some have said
+that it might be impossible to achieve. \\
+
+For this to work, \textbf{any change that could be controversial should not be applied}. \\
+
+There may be some exteme cases where a rewording might make theorycrafting less effective (changes to 
+\textit{Simularcrum} come to mind). As these do not (and should not) come up under actual play,
+objections in this case may be discounted. \\
+
+\subsection{Each change must be acknowledged}
+
+Pathfinder is a very extensive ruleset, that builds on top of an old and venerable chassis. That it
+has survived this long is a testament to its quality. However, there is much legacy cruft that is still
+hanging off it. This still catches players and GMs by surprise. (The 1-round casting time of the \textit{Sleep}
+spell continues to surprise players, and it has been around since 3.0). \\
+
+For this reason, changes should be noted so that issues can be traced back to where they are from. \\
+
+\subsection{Challenge Ratings should not require adjustment}
+
+One of the strengths of Pathfinder is its wide array of first- and third-party content available. Changes to
+the system that damage this will make the system of little use.
+
+
+\section{Planned Changes}
+In light of these goals, the following nonexhaustive changes are planned:
+
+\begin{itemize}
+ \item Remove some unnecessary rules, like the +1 BAB requirement to draw a weapon while moving.
+ \item Remove or reword horribly misunderstood and unclear rules, like the "bless counters and dispels bane" and other "counters and dispels" clauses that never come up in matter of course.
+ \item Reword the counterspell rules in general - in particular, remove the "same target" requirement that makes counterspelling personal-range spells impossible.
+ \item Increase skill points for the sorcerer, fighter and cleric.
+ \item Change the sorcerer's spell access - possibly by removing their one-level penalty compared to the wizard, and definitely by making their bloodline spells available as soon as the slots were unlocked.
+ \item Possibly replace Arcane Spell Failure with a straight proficiency requirement.
+ \item Add sidebar notes to commonly abused spells like Simulacrum to curb the theorycrafted abuses that arise. 
+\end{itemize}
+
+\section{Formatting Changes TODO}
+
+Formatting changes should be made to the parent project (\url{https://github.com/Mekkiss/latexprd})
+
+\begin{itemize}
+ \item Fix multi-page, multi-column tables.
+ \item Make font size slightly smaller in general. * Reduced to 9.5
+ \item Overhanging table titles (is it possible in \LaTeX )
+ \item Proper cross-references
+ \item A bunch of Chapter 12 is missing --- rationalise against the PRD
+\end{itemize}
+
+% \section{LaTeX questions}
+\begin{itemize}
+ \item Find a table expert with multicolumn experience
+ \item Balancing an end-of-chapter two-column layer
+ \item LaTexLint
+\end{itemize}
+
