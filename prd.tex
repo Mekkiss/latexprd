@@ -25,7 +25,6 @@
 \usepackage{makeidx} \makeindex
 \usepackage[table]{xcolor}
 \definecolor{offyellow}{RGB}{255,255,128}
-\definecolor{darkblue}{RGB}{0,0,139}
 \definecolor{links}{RGB}{200,0,50}
 \usepackage{multirow}
 \usepackage{tabulary}
@@ -42,33 +41,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% End of Import Section %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%% Box quotes %%%%
-% for adjustwidth environment
-%\usepackage[strict]{changepage}
-
-% for formal definitions
-\usepackage{framed}
-
-% environment derived from framed.sty: see leftbar environment definition
-\definecolor{formalshade}{rgb}{0.95,0.95,1}
-
-\newenvironment{formal}{%
-  \def\FrameCommand{%
-    \hspace{1pt}%
-    {\color{darkblue}\vrule width 2pt}%
-    {\color{formalshade}\vrule width 4pt}%
-    \colorbox{formalshade}%
-  }%
-  \MakeFramed{\advance\hsize-\width\FrameRestore}%
-  \noindent\hspace{-4.55pt}% disable indenting first paragraph
-  \begin{adjustwidth}{}{7pt}%
-  \vspace{2pt}\vspace{2pt}%
-}
-{%
-  \vspace{2pt}\end{adjustwidth}\endMakeFramed%
-}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -232,10 +204,10 @@
 %% Primary Chapters Here
 
 \clearpage
+%\begin{multicols}{2}
 
-\input{README}
-\input{contributing}
-\input{changelog}
+\input{todo}
+
 
 \input{chapter-headings/pf01-gettingstarted}
 \input{chapter-headings/pf02-races}
